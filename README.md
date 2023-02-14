@@ -2,7 +2,7 @@
 
 Projetos das disciplinas de Administração de Redes de Computadores (ADC) e Telefonia IP (IPT) do Curso Técnico Integrado ao Ensino Médio em Telecomunicações do Instituto Federal de Santa Catarina (IFSC) câmpus São José.
 
-## Catálogos de jogos
+## Referências
 
 - [IFSC: jogos Web com Javascript](https://boidacarapreta.gitbook.io/projetos/integrado-ao-ensino-medio-em-telecomunicacoes/aplicacao-web-com-javascript)
 - [IGF: finalistas](https://igf.com/finalists-and-winners)
