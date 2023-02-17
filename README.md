@@ -7,3 +7,4 @@ Projetos das disciplinas de Administração de Redes de Computadores (ADC) e Tel
 - [IFSC: jogos Web com Javascript](https://boidacarapreta.gitbook.io/projetos/integrado-ao-ensino-medio-em-telecomunicacoes/aplicacao-web-com-javascript)
 - [IGF: finalistas](https://igf.com/finalists-and-winners)
 - [Itch: top games made with Phaser](https://itch.io/games/made-with-phaser)
+- [Indie Games Plus](https://indiegamesplus.com)
