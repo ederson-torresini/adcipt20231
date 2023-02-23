@@ -1,0 +1,22 @@
+{
+  "name": "adcipt20231",
+  "version": "0.1.0",
+  "description": "Projetos das disciplinas de Administração de Redes de Computadores (ADC) e Telefonia IP (IPT) do Curso Técnico Integrado ao Ensino Médio em Telecomunicações do Instituto Federal de Santa Catarina (IFSC) câmpus São José.",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boidacarapreta/adcipt20231.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boidacarapreta/adcipt20231/issues"
+  },
+  "homepage": "https://github.com/boidacarapreta/adcipt20231#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
