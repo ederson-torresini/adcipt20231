@@ -22,12 +22,7 @@ Entretanto, dois alunos chegaram mais cedo para o evento. Distraídos, vagaram p
 
 ## Referências
 
-Para o jogo aqui desenvolvido:
-
-- Jogo [The Dig](https://en.wikipedia.org/wiki/The_Dig_(video_game)).
-- Livros de Arthur C. Clarke: [2001, Uma Odisseia no Espaço](https://www.goodreads.com/book/show/70535.2001), [Série Rama](https://www.goodreads.com/series/49121-rama) e [O Fim da Infância](https://www.goodreads.com/book/show/414999.Childhood_s_End).
-- [IMDB: Top 100 Sci-Fi Movies of All Time](https://www.imdb.com/list/ls055874673/).
-- [Spotify: discografia completa de Vangelis](https://open.spotify.com/artist/4P70aqttdpJ9vuYFDmf7f6/discography/all) - destaque para [Albedo 0.39](https://open.spotify.com/album/7M2EhhKnJYcmluPNzmB35N) e [The Best of...](https://open.spotify.com/album/7y45PMMVyz4EGcfck4gyY7).
+Inspirado em jogos de mistério como [The Dig](https://en.wikipedia.org/wiki/The_Dig_(video_game)) e livros de detetive como Agatha Christie ([O Caso dos Dez Negrinhos](https://www.goodreads.com/book/show/26162628-o-caso-dos-dez-negrinhos) e [Assassinato no Expresso Oriente](https://www.goodreads.com/book/show/23006548-assassinato-no-expresso-do-oriente)), a ideia é de um jogo de busca por pistas para solucionar o mistério. Os dois personagens, separados mas conectados por um canal de voz (com possíveis ruídos ao longo da jornada), devem vasculhar o prédio por objetos a coletar, informações a reunir e fazer as acusações (já jogou [Detetive](https://www.estrela.com.br/jogo-detetive-retro/p)?). Tudo isso regado ao ótimo _new age_ de [Vangelis](https://open.spotify.com/artist/4P70aqttdpJ9vuYFDmf7f6/discography/all) (destaque para [Albedo 0.39](https://open.spotify.com/album/7M2EhhKnJYcmluPNzmB35N) e [The Best of...](https://open.spotify.com/album/7y45PMMVyz4EGcfck4gyY7)).
 
 Para o desenvolvimento de jogo Web em geral:
 
