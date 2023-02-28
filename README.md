@@ -30,3 +30,11 @@ Para o desenvolvimento de jogo Web em geral:
 - [IGF: finalistas](https://igf.com/finalists-and-winners)
 - [Itch: top games made with Phaser](https://itch.io/games/made-with-phaser)
 - [Indie Games Plus](https://indiegamesplus.com)
+
+## Jogos/Aplicativos do alunos
+
+- [Cattus](https://github.com/silentiummm/Cattus)
+- [Jogo da Hope Games](https://github.com/Hope-Games/jogo)
+- [Jogo de ja-on1](https://github.com/ja-on1/jogo1)
+- [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)
+- [Oktopus](https://github.com/leandrofars/oktopus)
