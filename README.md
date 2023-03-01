@@ -36,5 +36,6 @@ Para o desenvolvimento de jogo Web em geral:
 - [Cattus](https://github.com/silentiummm/Cattus)
 - [Jogo da Hope Games](https://github.com/Hope-Games/jogo)
 - [Jogo de ja-on1](https://github.com/ja-on1/jogo1)
+- [jogoifsc](https://github.com/AbleTecnologia/jogoifsc)
 - [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)
 - [Oktopus](https://github.com/leandrofars/oktopus)
