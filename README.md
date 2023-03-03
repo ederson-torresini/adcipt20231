@@ -34,6 +34,7 @@ Para o desenvolvimento de jogo Web em geral:
 ## Jogos/Aplicativos do alunos
 
 - [Cattus](https://github.com/silentiummm/Cattus)
+- [Gob Between Us](https://github.com/Lorum-Gaming/God-Between-Us)
 - [Jogo da Hope Games](https://github.com/Hope-Games/jogo)
 - [Jogo de ja-on1](https://github.com/ja-on1/jogo1)
 - [jogoifsc](https://github.com/AbleTecnologia/jogoifsc)
