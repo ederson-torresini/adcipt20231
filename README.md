@@ -40,3 +40,4 @@ Para o desenvolvimento de jogo Web em geral:
 - [jogoifsc](https://github.com/AbleTecnologia/jogoifsc)
 - [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)
 - [Oktopus](https://github.com/leandrofars/oktopus)
+- [Trivert](https://github.com/Saga-games/Trivert)
