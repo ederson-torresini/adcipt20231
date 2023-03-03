@@ -34,6 +34,7 @@ Para o desenvolvimento de jogo Web em geral:
 ## Jogos/Aplicativos do alunos
 
 - [Cattus](https://github.com/silentiummm/Cattus)
+- [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas)
 - [Gob Between Us](https://github.com/Lorum-Gaming/God-Between-Us)
 - [Jogo da Hope Games](https://github.com/Hope-Games/jogo)
 - [Jogo de ja-on1](https://github.com/ja-on1/jogo1)
