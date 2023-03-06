@@ -31,7 +31,7 @@ Para o desenvolvimento de jogo Web em geral:
 - [Itch: top games made with Phaser](https://itch.io/games/made-with-phaser)
 - [Indie Games Plus](https://indiegamesplus.com)
 
-## Jogos/Aplicativos do alunos
+## Jogos e aplicativos do alunos
 
 - [Cattus](https://github.com/silentiummm/Cattus)
 - [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas)
