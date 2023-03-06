@@ -4,7 +4,7 @@ Para este semestre de 2023.1, a turma escolheu como tema de projeto o desenvolvi
 
 ## Premissa do jogo
 
-Dois alunos estão, enfim, formando-se no ensino médio. Porém, no dia da formatura, eles encontram uma nave espacial enterrada embaixo do auditório, onde ocorrerá a colação de grau, com planos de sequestrar os alunos (todos, será?) para um exoplaneta em Tau Ceti. Eles têm pouco tempo para descobrir quem é o alienígena infiltrado no evento! Será um professor? Ou mesmo um de seus colegas?
+Dois alunos estão, enfim, formando-se no ensino médio. Porém, no dia da formatura, eles encontram uma nave espacial enterrada embaixo do auditório, onde ocorrerá a colação de grau, com planos de sequestrar os alunos (todos, será?) para um exoplaneta em Alpha Centauri. Eles têm pouco tempo para descobrir quem é o alienígena infiltrado no evento! Será um professor? Ou mesmo um de seus colegas?
 
 ## Ideia geral do jogo (ideal)
 
@@ -28,14 +28,16 @@ Ambos os jogadores têm canal de áudio ativado quando começa a partida, canal 
 
 Ambos os jogadores começam no centro do tabuleiro, que é maior que a tela. O tabuleiro está em plano cartesiano (2D) para movimentação dos personagens nos eixos X e Y. Cada jogador possui câmera própria, logo a apresentação do jogador será central na tela, com a movimentação do tabuleiro.
 
-Na tela há controle de movimentação para cada eixo (vertical e horizontal). Para tornar a experiência do jogo mais interessante, a cada intervalo de tempo (decrescente no desenrolar de cada partida) a tela fica totalmente de uma única cor (um *flash* de luz) e os controle são embaralhados para ambos os jogadores. Isso significa que, em cada um desse intervalos, os direcionais da tela têm operação diferente. Exemplo:
+Na tela há controle de movimentação para cada eixo (vertical e horizontal). Para tornar a experiência do jogo mais interessante, a cada intervalo de tempo (decrescente no desenrolar de cada partida) a tela fica totalmente de uma única cor (um *flash* de luz) e os controle são embaralhados para ambos os jogadores. Em termos de história, são raios de controle mental lançados pelo infiltrado para chamar os alunos para a nave, o que gera desorientação. Isso significa que, em cada um desse intervalos, os direcionais da tela têm operação diferente. Exemplo:
 
 - Primeiro intervalo: direcionais de cada jogadores operando normalmente.
 - Segundo intervalo: direcionais controlam os jogadores remotos.
 - Terceiro intervalo: direcionais ficam invertidos (de "cabeça para baixo").
 - Quarto intervalo: direcionais são misturados, onde o comando "para cima" controla ambos os personagens, "para baixo" significa jogador 1 para direita e jogador 2 para esquerda etc.
 
-O jogo tem limite de tempo. Ambos os jogadores devem coletar objetos e resolver, com esses, quebra-cabeças dentro do prazo.
+Opcionalmente, camadas (*layers*) do tabuleiro (*tilemap*) podem ser alternadas, oferecendo obstáculos (*tiles*) distintos a cada intervalo de tempo.
+
+A partida tem limite de tempo. Ambos os jogadores devem coletar objetos e resolver, com esses, quebra-cabeças dentro do prazo.
 
 ## Referências
 
