@@ -20,6 +20,23 @@ E eles vieram. Em 2023, vários humanos mostraram-se propensos a serem extraído
 
 Entretanto, dois alunos chegaram mais cedo para o evento. Distraídos, vagaram pelos espaços do prédio, e encontraram uma passagem para a nave. Curiosos, inconsequentes, futuros heróis!, descobriram o plano de sequestro para o planeta _f_ e decidiram localizar o alienígena infiltrado na formatura antes que seja tarde demais. Mas quem será o impostor? Um professor? Um colega de classe? Não percam as aventuras de **Terra contra a Grande Mente**!
 
+## Regras do jogo
+
+O jogo tem *n* salas de partida. Cada sala possui o limite mínimo e máximo de 2 jogadores. Ao escolher uma sala, o jogo verifica se a sala está cheia, para somente assim iniciar a partida.
+
+Ambos os jogadores têm canal de áudio ativado quando começa a partida, canal esse compartilhado com o outro jogador da sala.
+
+Ambos os jogadores começam no centro do tabuleiro, que é maior que a tela. O tabuleiro está em plano cartesiano (2D) para movimentação dos personagens nos eixos X e Y. Cada jogador possui câmera própria, logo a apresentação do jogador será central na tela, com a movimentação do tabuleiro.
+
+Na tela há controle de movimentação para cada eixo (vertical e horizontal). Para tornar a experiência do jogo mais interessante, a cada intervalo de tempo (decrescente no desenrolar de cada partida) a tela fica totalmente de uma única cor (um *flash* de luz) e os controle são embaralhados para ambos os jogadores. Isso significa que, em cada um desse intervalos, os direcionais da tela têm operação diferente. Exemplo:
+
+- Primeiro intervalo: direcionais de cada jogadores operando normalmente.
+- Segundo intervalo: direcionais controlam os jogadores remotos.
+- Terceiro intervalo: direcionais ficam invertidos (de "cabeça para baixo").
+- Quarto intervalo: direcionais são misturados, onde o comando "para cima" controla ambos os personagens, "para baixo" significa jogador 1 para direita e jogador 2 para esquerda etc.
+
+O jogo tem limite de tempo. Ambos os jogadores devem coletar objetos e resolver, com esses, quebra-cabeças dentro do prazo.
+
 ## Referências
 
 Inspirado no de mistério como [The Dig](https://en.wikipedia.org/wiki/The_Dig_(video_game)), no filme [O Enigma do Outro Mundo](https://www.imdb.com/title/tt0084787/) e em livros de detetive como Agatha Christie ([O Caso dos Dez Negrinhos](https://www.goodreads.com/book/show/26162628-o-caso-dos-dez-negrinhos) e [Assassinato no Expresso do Oriente](https://www.goodreads.com/book/show/23006548-assassinato-no-expresso-do-oriente)), a ideia é de um jogo de busca por pistas para solucionar o mistério. Os dois personagens, separados mas conectados por um canal de voz (com possíveis ruídos ao longo da jornada), devem vasculhar o prédio por objetos a coletar, informações a reunir e fazer as acusações (já jogou [Detetive](https://www.estrela.com.br/jogo-detetive-retro/p)?). Tudo isso regado ao ótimo _new age_ de [Vangelis](https://open.spotify.com/artist/4P70aqttdpJ9vuYFDmf7f6/discography/all) (destaque para [Albedo 0.39](https://open.spotify.com/album/7M2EhhKnJYcmluPNzmB35N) e [The Best of...](https://open.spotify.com/album/7y45PMMVyz4EGcfck4gyY7)).
