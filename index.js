@@ -4,7 +4,7 @@ import CenaDeAbertura from "./cena.js";
 class Game extends Phaser.Game {
   constructor() {
     super(config);
-    this.globals = {};
+    this.socket = io();
     this.scene.add("abertura", CenaDeAbertura);
     this.scene.start("abertura");
   }
