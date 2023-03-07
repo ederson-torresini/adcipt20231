@@ -6,7 +6,10 @@ const PORT = process.env.PORT || 3000;
 
 io.on("connection", (socket) => {
   socket.on("entrar-na-sala", (id) => {
-    console.log(id);
+    console.log("Jogador %s entrou na partida.", id);
+  });
+  socket.on("cena", ({ jogador, cena }) => {
+    console.log("Jogador %s na cena %s.", jogador, cena)
   });
 });
 
