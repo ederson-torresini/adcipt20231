@@ -87,7 +87,12 @@ export default class CenaDeAbertura extends Phaser.Scene {
       return;
     }
     if (this.game.socket.connected) {
-      this.game.socket.emit("cena", { jogador: this.game.socket.id, cena: 1 });
+      this.game.socket.emit("cena", {
+        cena: 1,
+        jogador: this.game.socket.id,
+        x: this.player.x,
+        y: this.player.y
+      });
     }
     if (this.cursors.left.isDown) {
       this.player.setVelocityX(-160);
