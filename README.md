@@ -47,6 +47,14 @@ O objetivo dos jogadores é, basicamente, identificar quem é o infiltrado na mu
 - Onde estão os objetos para coletar;
 - Disposição dos quebra-cabeças no tabuleiro.
 
+## Possíveis formas de receita
+
+Por se tratar de um jogo ao estilo *rogue-lite*, e o tempo ser um elemento importante no jogo, podem ser usados *elixires de velocidade*, que mudam a velocidade do relógio da partida (para mais ou menos). Assim, como possibilidade de receita uma loja virtual dentro do jogo:
+
+- Roupas personalizadas;
+- Elixires de velocidade;
+- Dicas de localização dos objetos e solução dos quebra-cabeças.
+
 ## Referências
 
 Inspirado no de mistério como [The Dig](https://en.wikipedia.org/wiki/The_Dig_(video_game)), no filme [O Enigma do Outro Mundo](https://www.imdb.com/title/tt0084787/) e em livros de detetive como Agatha Christie ([O Caso dos Dez Negrinhos](https://www.goodreads.com/book/show/26162628-o-caso-dos-dez-negrinhos) e [Assassinato no Expresso do Oriente](https://www.goodreads.com/book/show/23006548-assassinato-no-expresso-do-oriente)), a ideia é de um jogo de busca por pistas para solucionar o mistério. Os dois personagens, separados mas conectados por um canal de voz (com possíveis ruídos ao longo da jornada), devem vasculhar o prédio por objetos a coletar, informações a reunir e fazer as acusações (já jogou [Detetive](https://www.estrela.com.br/jogo-detetive-retro/p)?). Tudo isso regado ao ótimo _new age_ de [Vangelis](https://open.spotify.com/artist/4P70aqttdpJ9vuYFDmf7f6/discography/all) (destaque para [Albedo 0.39](https://open.spotify.com/album/7M2EhhKnJYcmluPNzmB35N) e [The Best of...](https://open.spotify.com/album/7y45PMMVyz4EGcfck4gyY7)).
