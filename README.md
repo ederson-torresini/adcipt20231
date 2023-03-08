@@ -39,6 +39,14 @@ Opcionalmente, camadas (*layers*) do tabuleiro (*tilemap*) podem ser alternadas,
 
 A partida tem limite de tempo. Ambos os jogadores devem coletar objetos e resolver, com esses, quebra-cabeças dentro do prazo.
 
+## Objetivo do jogo
+
+O objetivo dos jogadores é, basicamente, identificar quem é o infiltrado na multidão que está dentro do auditório do câmpus. Se a escolha for a certa, ambos os jogadores ganham a partida. Caso contrário, uma nova partida é reiniciada, e são gerados novos valores (aleatórios) ao estilo *rogue-lite* (algumas informações podem ser aproveitadas):
+
+- Quem é o infiltrado;
+- Onde estão os objetos para coletar;
+- Disposição dos quebra-cabeças no tabuleiro.
+
 ## Referências
 
 Inspirado no de mistério como [The Dig](https://en.wikipedia.org/wiki/The_Dig_(video_game)), no filme [O Enigma do Outro Mundo](https://www.imdb.com/title/tt0084787/) e em livros de detetive como Agatha Christie ([O Caso dos Dez Negrinhos](https://www.goodreads.com/book/show/26162628-o-caso-dos-dez-negrinhos) e [Assassinato no Expresso do Oriente](https://www.goodreads.com/book/show/23006548-assassinato-no-expresso-do-oriente)), a ideia é de um jogo de busca por pistas para solucionar o mistério. Os dois personagens, separados mas conectados por um canal de voz (com possíveis ruídos ao longo da jornada), devem vasculhar o prédio por objetos a coletar, informações a reunir e fazer as acusações (já jogou [Detetive](https://www.estrela.com.br/jogo-detetive-retro/p)?). Tudo isso regado ao ótimo _new age_ de [Vangelis](https://open.spotify.com/artist/4P70aqttdpJ9vuYFDmf7f6/discography/all) (destaque para [Albedo 0.39](https://open.spotify.com/album/7M2EhhKnJYcmluPNzmB35N) e [The Best of...](https://open.spotify.com/album/7y45PMMVyz4EGcfck4gyY7)).
