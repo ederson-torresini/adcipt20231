@@ -70,6 +70,7 @@ Para o desenvolvimento de jogo Web em geral:
 
 - [Cattus](https://github.com/silentiummm/Cattus)
 - [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas)
+- [Folclore](https://github.com/ifgamessc/Folclore)
 - [Gob Between Us](https://github.com/Lorum-Gaming/God-Between-Us)
 - [The quest for knowledge](https://github.com/Hope-Games/jogo)
 - [João & Maria: The order of warder](https://github.com/ja-on1/jogo1)
