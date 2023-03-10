@@ -4,7 +4,7 @@ Para este semestre de 2023.1, a turma escolheu como tema de projeto o desenvolvi
 
 ## Premissa do jogo
 
-2 alunos estão, enfim, formando-se no ensino médio. Porém, no dia da formatura, eles encontram uma nave espacial enterrada embaixo do auditório, onde ocorrerá a colação de grau, com planos de sequestrar os alunos (todos, será?) para um exoplaneta em Alpha Centauri. Eles têm pouco tempo para descobrir quem é o alienígena infiltrado no evento! Será um professor? Ou mesmo um de seus colegas?
+2 alunos estão, enfim, formando-se no ensino médio. Porém, no dia da formatura, eles encontram uma nave espacial enterrada embaixo do auditório, onde ocorrerá a colação de grau, com planos de sequestrar os alunos (todos, será?) para um exoplaneta em _Alpha Centauri_ - mais especificamente de _Alpha Centauri C_ (_Proxima Centauri_). Eles têm pouco tempo para descobrir quem é o alienígena infiltrado no evento! Será um professor? Ou mesmo um de seus colegas?
 
 ## Ideia geral do jogo (ideal)
 
@@ -12,7 +12,7 @@ Eu sempre gostei de ficção científica. Quando eu era mais novo, no caso bem m
 
 O jogo aqui pensado é, na medida do possível, uma homenagem aos clássicos das revistinhas _pulp_, encontros insólitos entre bárbaros e macacos alienígenas, armas laser!, à fantasia absurda que entretém - e diverte. Sem _hard sci-fi_ dessa vez: o que interessa é o humor (ácido). Marte ataca!
 
-Planeta: A Terra. Cidade: São José. Como em todas as metrópoles deste planeta, São José se acha hoje em desvantagem em sua luta contra o maior inimigo do homem: a poluição. Mas muitos outros planetas além do nosso sistema solar sofrem com o mesmo mal. Um em especial, que para nós terráqueos chama-se Tau Ceti _f_, também está acometido pela poluição descontrolada dos rios e oceanos subterrâneos. No curto prazo, pouco pode ser feito. No médio prazo, porém, há uma chance, ainda que remota: o sequestro de cérebros de outros planetas para formar uma única Grande Mente para resolver o maior dos problemas dos habitantes do planeta _f_.
+Planeta: A Terra. Cidade: São José. Como em todas as metrópoles deste planeta, São José se acha hoje em desvantagem em sua luta contra o maior inimigo do homem: a poluição. Mas muitos outros planetas além do nosso sistema solar sofrem com o mesmo mal. Um em especial, que para nós terráqueos chama-se _Proxima Centauri c_, também está acometido pela poluição descontrolada dos rios e oceanos subterrâneos. No curto prazo, pouco pode ser feito. No médio prazo, porém, há uma chance, ainda que remota: o sequestro de cérebros de outros planetas para formar uma única Grande Mente para resolver o maior dos problemas dos habitantes do planeta _c_.
 
 Várias missões espaciais foram destacadas para os vários quadrantes do espaço. E, no caso da Terra, uma foi designada para coletar os melhores espécimes para extração. Na chegada da nave à atmosfera terrestre, em 1989, o piloto achou por bem escondê-la em um prédio em construção. Mais especificamente, nas coordenadas terrestres 27°36'30.427"S e 48°38'0.938"O. Paciência, eles virão.
 
