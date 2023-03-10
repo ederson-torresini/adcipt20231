@@ -4,7 +4,7 @@ Para este semestre de 2023.1, a turma escolheu como tema de projeto o desenvolvi
 
 ## Premissa do jogo
 
-Dois alunos estão, enfim, formando-se no ensino médio. Porém, no dia da formatura, eles encontram uma nave espacial enterrada embaixo do auditório, onde ocorrerá a colação de grau, com planos de sequestrar os alunos (todos, será?) para um exoplaneta em Alpha Centauri. Eles têm pouco tempo para descobrir quem é o alienígena infiltrado no evento! Será um professor? Ou mesmo um de seus colegas?
+2 alunos estão, enfim, formando-se no ensino médio. Porém, no dia da formatura, eles encontram uma nave espacial enterrada embaixo do auditório, onde ocorrerá a colação de grau, com planos de sequestrar os alunos (todos, será?) para um exoplaneta em Alpha Centauri. Eles têm pouco tempo para descobrir quem é o alienígena infiltrado no evento! Será um professor? Ou mesmo um de seus colegas?
 
 ## Ideia geral do jogo (ideal)
 
