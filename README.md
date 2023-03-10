@@ -22,26 +22,26 @@ Entretanto, dois alunos chegaram mais cedo para o evento. Distraídos, vagaram p
 
 ## Regras do jogo
 
-O jogo tem *n* salas de partida. Cada sala possui o limite mínimo e máximo de 2 jogadores. Ao escolher uma sala, o jogo verifica se a sala está cheia, para somente assim iniciar a partida.
+O jogo tem _n_ salas de partida. Cada sala possui o limite mínimo e máximo de 2 jogadores. Ao escolher uma sala, o jogo verifica se a sala está cheia, para somente assim iniciar a partida.
 
 Ambos os jogadores têm canal de áudio ativado quando começa a partida, canal esse compartilhado com o outro jogador da sala.
 
 Ambos os jogadores começam no centro do tabuleiro, que é maior que a tela. O tabuleiro está em plano cartesiano (2D) para movimentação dos personagens nos eixos X e Y. Cada jogador possui câmera própria, logo a apresentação do jogador será central na tela, com a movimentação do tabuleiro.
 
-Na tela há controle de movimentação para cada eixo (vertical e horizontal). Para tornar a experiência do jogo mais interessante, a cada intervalo de tempo (decrescente no desenrolar de cada partida) a tela fica totalmente de uma única cor (um *flash* de luz) e os controle são embaralhados para ambos os jogadores. Em termos de história, são raios de controle mental lançados pelo infiltrado para chamar os alunos para a nave, o que gera desorientação. Isso significa que, em cada um desse intervalos, os direcionais da tela têm operação diferente. Exemplo:
+Na tela há controle de movimentação para cada eixo (vertical e horizontal). Para tornar a experiência do jogo mais interessante, a cada intervalo de tempo (decrescente no desenrolar de cada partida) a tela fica totalmente de uma única cor (um _flash_ de luz) e os controle são embaralhados para ambos os jogadores. Em termos de história, são raios de controle mental lançados pelo infiltrado para chamar os alunos para a nave, o que gera desorientação. Isso significa que, em cada um desse intervalos, os direcionais da tela têm operação diferente. Exemplo:
 
 - Primeiro intervalo: direcionais de cada jogadores operando normalmente.
 - Segundo intervalo: direcionais controlam os jogadores remotos.
 - Terceiro intervalo: direcionais ficam invertidos (de "cabeça para baixo").
 - Quarto intervalo: direcionais são misturados, onde o comando "para cima" controla ambos os personagens, "para baixo" significa jogador 1 para direita e jogador 2 para esquerda etc.
 
-Opcionalmente, camadas (*layers*) do tabuleiro (*tilemap*) podem ser alternadas, oferecendo obstáculos (*tiles*) distintos a cada intervalo de tempo.
+Opcionalmente, camadas (_layers_) do tabuleiro (_tilemap_) podem ser alternadas, oferecendo obstáculos (_tiles_) distintos a cada intervalo de tempo.
 
 A partida tem limite de tempo. Ambos os jogadores devem coletar objetos e resolver, com esses, quebra-cabeças dentro do prazo.
 
 ## Objetivo do jogo
 
-O objetivo dos jogadores é, basicamente, identificar quem é o infiltrado na multidão que está dentro do auditório do câmpus. Se a escolha for a certa, ambos os jogadores ganham a partida. Caso contrário, uma nova partida é reiniciada, e são gerados novos valores (aleatórios) ao estilo *rogue-lite* (algumas informações podem ser aproveitadas):
+O objetivo dos jogadores é, basicamente, identificar quem é o infiltrado na multidão que está dentro do auditório do câmpus. Se a escolha for a certa, ambos os jogadores ganham a partida. Caso contrário, uma nova partida é reiniciada, e são gerados novos valores (aleatórios) ao estilo _rogue-lite_ (algumas informações podem ser aproveitadas):
 
 - Quem é o infiltrado;
 - Onde estão os objetos para coletar;
@@ -49,7 +49,7 @@ O objetivo dos jogadores é, basicamente, identificar quem é o infiltrado na mu
 
 ## Possíveis formas de receita
 
-Por se tratar de um jogo ao estilo *rogue-lite*, e o tempo ser um elemento importante no jogo, podem ser usados *elixires de velocidade*, que mudam a velocidade do relógio da partida (para mais ou menos). Assim, como possibilidade de receita uma loja virtual dentro do jogo:
+Por se tratar de um jogo ao estilo _rogue-lite_, e o tempo ser um elemento importante no jogo, podem ser usados _elixires de velocidade_, que mudam a velocidade do relógio da partida (para mais ou menos). Assim, como possibilidade de receita uma loja virtual dentro do jogo:
 
 - Roupas personalizadas;
 - Elixires de velocidade;
@@ -57,7 +57,7 @@ Por se tratar de um jogo ao estilo *rogue-lite*, e o tempo ser um elemento impor
 
 ## Referências
 
-Inspirado no de mistério como [The Dig](https://en.wikipedia.org/wiki/The_Dig_(video_game)), no filme [O Enigma do Outro Mundo](https://www.imdb.com/title/tt0084787/) e em livros de detetive como Agatha Christie ([O Caso dos Dez Negrinhos](https://www.goodreads.com/book/show/26162628-o-caso-dos-dez-negrinhos) e [Assassinato no Expresso do Oriente](https://www.goodreads.com/book/show/23006548-assassinato-no-expresso-do-oriente)), a ideia é de um jogo de busca por pistas para solucionar o mistério. Os dois personagens, separados mas conectados por um canal de voz (com possíveis ruídos ao longo da jornada), devem vasculhar o prédio por objetos a coletar, informações a reunir e fazer as acusações (já jogou [Detetive](https://www.estrela.com.br/jogo-detetive-retro/p)?). Tudo isso regado ao ótimo _new age_ de [Vangelis](https://open.spotify.com/artist/4P70aqttdpJ9vuYFDmf7f6/discography/all) (destaque para [Albedo 0.39](https://open.spotify.com/album/7M2EhhKnJYcmluPNzmB35N) e [The Best of...](https://open.spotify.com/album/7y45PMMVyz4EGcfck4gyY7)).
+Inspirado no de mistério como [The Dig](<https://en.wikipedia.org/wiki/The_Dig_(video_game)>), no filme [O Enigma do Outro Mundo](https://www.imdb.com/title/tt0084787/) e em livros de detetive como Agatha Christie ([O Caso dos Dez Negrinhos](https://www.goodreads.com/book/show/26162628-o-caso-dos-dez-negrinhos) e [Assassinato no Expresso do Oriente](https://www.goodreads.com/book/show/23006548-assassinato-no-expresso-do-oriente)), a ideia é de um jogo de busca por pistas para solucionar o mistério. Os dois personagens, separados mas conectados por um canal de voz (com possíveis ruídos ao longo da jornada), devem vasculhar o prédio por objetos a coletar, informações a reunir e fazer as acusações (já jogou [Detetive](https://www.estrela.com.br/jogo-detetive-retro/p)?). Tudo isso regado ao ótimo _new age_ de [Vangelis](https://open.spotify.com/artist/4P70aqttdpJ9vuYFDmf7f6/discography/all) (destaque para [Albedo 0.39](https://open.spotify.com/album/7M2EhhKnJYcmluPNzmB35N) e [The Best of...](https://open.spotify.com/album/7y45PMMVyz4EGcfck4gyY7)).
 
 Para o desenvolvimento de jogo Web em geral:
 
@@ -68,13 +68,17 @@ Para o desenvolvimento de jogo Web em geral:
 
 ## Jogos e aplicativos do alunos
 
-- [Cattus](https://github.com/silentiummm/Cattus)
-- [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas)
-- [Folclore](https://github.com/ifgamessc/Folclore)
-- [Gob Between Us](https://github.com/Lorum-Gaming/God-Between-Us)
-- [The quest for knowledge](https://github.com/Hope-Games/jogo)
-- [João & Maria: The order of warder](https://github.com/ja-on1/jogo1)
-- [jogoifsc](https://github.com/AbleTecnologia/jogoifsc)
-- [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)
-- [Oktopus](https://github.com/leandrofars/oktopus)
-- [Trivert](https://github.com/Saga-games/Trivert)
+Projeto modelo: [adcipt20231](https://github.com/users/boidacarapreta/projects/4).
+
+| Equipe                                              | Jogo                                                                                       | Projeto                                                                         | Entrega 1 |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | --------- |
+| [silentiummm](https://github.com/silentiummm)       | [Cattus](https://github.com/silentiummm/Cattus)                                            | ?                                                                               | ?         |
+| [lotus gamess](https://github.com/lotus-gamess)     | [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas) | ?                                                                               | ?         |
+| [ifgamessc](https://github.com/ifgamessc)           | [Folclore](https://github.com/ifgamessc/Folclore)                                          | [Kanban](https://github.com/orgs/ifgamessc/projects/1)                          | 0         |
+| [Lorum-Gaming](https://github.com/Lorum-Gaming)     | [Gob Between Us](https://github.com/Lorum-Gaming/God-Between-Us)                           | ?                                                                               | ?         |
+| [Hope-Games](https://github.com/Hope-Games)         | [The quest for knowledge](https://github.com/Hope-Games/jogo)                              | ?                                                                               | ?         |
+| [ja-on1](https://github.com/ja-on1/jogo1)           | [João & Maria: The order of warder](https://github.com/ja-on1/jogo1)                       | ?                                                                               | ?         |
+| [AbleTecnologia](https://github.com/AbleTecnologia) | [jogoifsc](https://github.com/AbleTecnologia/jogoifsc)                                     | ?                                                                               | ?         |
+| [BIGUA GAMES](https://github.com/BIGUA-GAMES)       | [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)                            | ?                                                                               | ?         |
+| [leandrofars](https://github.com/leandrofars)       | [Oktopus](https://github.com/leandrofars/oktopus)                                          | [Open Source TR369 Controller](https://github.com/users/leandrofars/projects/1) | 6         |
+| [Saga-games](https://github.com/Saga-games)         | [Trivert](https://github.com/Saga-games/Trivert)                                           | ?                                                                               | ?         |
