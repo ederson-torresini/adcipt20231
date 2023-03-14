@@ -1,0 +1,7 @@
+tasks:
+  - init: npm install
+    command: node servidor.js
+
+ports:
+  - port: 3000
+    onOpen: open-browser
