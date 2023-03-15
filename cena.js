@@ -9,12 +9,18 @@ export default class CenaDeAbertura extends Phaser.Scene {
     //
     // Testar Geolocation API
     this.txtCoords = this.add.text(50, 100, "", { fill: "#FFFFFF" });
-    this.game.navigator.geolocation.watchPosition(
+    window.navigator.geolocation.watchPosition(
       (pos) => {
+        var coords = {
+          latitude: pos.coords.latitude,
+          longitude: pos.coords.longitude,
+        };
         this.txtCoords.setText(
-          `Latitude: ${pos.coords.latitude}\nLongitude: ${pos.coords.longitude}`
+          `Latitude: ${coords.latitude}\nLongitude: ${coords.longitude}`
         );
-        this.game.socket.emit("geolocation-api", pos.coords);
+        if (this.game.socket) {
+          this.game.socket.emit("geolocation-api", coords);
+        }
       },
       (err) => {
         console.error(`Erro (${err.code}): ${err.message}`);
@@ -26,8 +32,10 @@ export default class CenaDeAbertura extends Phaser.Scene {
       .text(50, 200, "Vibration API", { fill: "#FFFFFF" })
       .setInteractive()
       .on("pointerdown", () => {
-        this.game.navigator.vibrate([1000]);
-        this.game.socket.emit("vibration-api", "1000 ms");
+        window.navigator.vibrate([1000]);
+        if (this.game.socket) {
+          this.game.socket.emit("vibration-api", "1000 ms");
+        }
       });
   }
 
