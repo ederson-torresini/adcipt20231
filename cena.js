@@ -31,7 +31,7 @@ export default class CenaDeAbertura extends Phaser.Scene {
     this.btVibrationApi = this.add
       .text(50, 200, "Vibration API", { fill: "#FFFFFF" })
       .setInteractive()
-      .on("pointerdown", () => {
+      .on("pointerover", () => {
         window.navigator.vibrate([1000]);
         if (this.game.socket) {
           this.game.socket.emit("vibration-api", "1000 ms");
