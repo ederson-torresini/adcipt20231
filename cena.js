@@ -9,7 +9,7 @@ export default class CenaDeAbertura extends Phaser.Scene {
     //
     // Testar Geolocation API
     this.txtCoords = this.add.text(50, 100, "", { fill: "#FFFFFF" });
-    window.navigator.geolocation.watchPosition(
+    navigator.geolocation.watchPosition(
       (pos) => {
         var coords = {
           latitude: pos.coords.latitude,
@@ -32,7 +32,8 @@ export default class CenaDeAbertura extends Phaser.Scene {
       .text(50, 200, "Vibration API", { fill: "#FFFFFF" })
       .setInteractive()
       .on("pointerover", () => {
-        window.navigator.vibrate([1000]);
+        this.cameras.main.shake(1000);
+        navigator.vibrate([1000]);
         if (this.game.socket) {
           this.game.socket.emit("vibration-api", "1000 ms");
         }
