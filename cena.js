@@ -28,12 +28,42 @@ export default class CenaDeAbertura extends Phaser.Scene {
     );
     //
     // Testar Vibration API
-    this.btVibrationApi = this.add
-      .text(50, 200, "Vibration API", { fill: "#FFFFFF" })
+    this.add
+      .text(50, 200, "[pointerover + this.game.navigator]", { fill: "#FFFFFF" })
       .setInteractive()
       .on("pointerover", () => {
         this.cameras.main.shake(1000);
         this.game.navigator.vibrate([1000]);
+        if (this.game.socket) {
+          this.game.socket.emit("vibration-api", "1000 ms");
+        }
+      });
+    this.add
+      .text(50, 250, "[pointerdown + this.game.navigator]", { fill: "#FFFFFF" })
+      .setInteractive()
+      .on("pointerdown", () => {
+        this.cameras.main.shake(1000);
+        this.game.navigator.vibrate([1000]);
+        if (this.game.socket) {
+          this.game.socket.emit("vibration-api", "1000 ms");
+        }
+      });
+    this.add
+      .text(50, 300, "[pointerover + window.navigator]", { fill: "#FFFFFF" })
+      .setInteractive()
+      .on("pointerover", () => {
+        this.cameras.main.shake(1000);
+        window.navigator.vibrate([1000]);
+        if (this.game.socket) {
+          this.game.socket.emit("vibration-api", "1000 ms");
+        }
+      });
+    this.add
+      .text(50, 350, "[pointerdown + window.navigator]", { fill: "#FFFFFF" })
+      .setInteractive()
+      .on("pointerdown", () => {
+        this.cameras.main.shake(1000);
+        window.navigator.vibrate([1000]);
         if (this.game.socket) {
           this.game.socket.emit("vibration-api", "1000 ms");
         }
