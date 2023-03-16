@@ -4,6 +4,9 @@ import CenaDeAbertura from "./cena.js";
 class Game extends Phaser.Game {
   constructor() {
     super(config);
+    //
+    // Objetos globais
+    this.navigator = window.navigator;
     try {
       this.socket = io();
       this.socket.on("connect", () => {
@@ -13,6 +16,7 @@ class Game extends Phaser.Game {
       console.log(err);
     }
     //
+    // Cenas
     this.scene.add("abertura", CenaDeAbertura);
     this.scene.start("abertura");
   }
