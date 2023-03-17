@@ -96,12 +96,14 @@ Os principais links para as artes :
  - [Para remover o fundo](https://www.remove.bg/pt-br) 
 tem como editar, caso alguma parte não apareça
  - [Para melhorar a qualidade dos desenhos](https://picwish.com/pt/photo-enhancer) 
+ - [Para redimensionar as imagens](https://www.iloveimg.com/pt/redimensionar-imagem)
  - [Pesquisas de sprites e geral](https://br.pinterest.com/)
  - [Editores Gerais 1 ](https://picsart.com/pt) 
  - [Editores Gerais 2 ](https://www.canva.com/pt_br/)
  - [Para construção Simples](https://www.piskelapp.com/)
  - [Para construção Avançada](https://krita.org/en/) 
  - [Para músicas de fundo](encr.pw/Eaev1)
+ 
 
 O objetivo semana 1 : 
  
