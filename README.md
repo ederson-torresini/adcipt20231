@@ -92,6 +92,10 @@ Dados para informação:
 - Os personagens, o recomendado é ser 64X64, caso outro personagem seja maior ou menor, que seja proporcional, exemplo : 32X32, 128x128.
 - O tamanho da tela é 800x450
 
+## Códigos para pesquisa 
+
+- Sprite pixel art *TANANA*( TANANA coloca o que deseja, ex: base, princesa) de preferência em inglês
+
 Os principais links para as artes :
 
 - [Para remover o fundo](https://www.remove.bg/pt-br)
