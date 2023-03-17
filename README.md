@@ -93,14 +93,14 @@ Dados para informação:
 - O tamanho da tela é 800x450
 
 Os principais links para as artes :
- - [Para remover o fundo].(https://www.remove.bg/pt-br) 
+ - [Para remover o fundo](https://www.remove.bg/pt-br) 
 tem como editar, caso alguma parte não apareça
- - [Para melhorar a qualidade dos desenhos].(https://picwish.com/pt/photo-enhancer) 
- - [Pesquisas de sprites e geral].(https://br.pinterest.com/)
- - [Editores Gerais 1 ].(https://picsart.com/pt) 
- - [Editores Gerais 2 ].(https://www.canva.com/pt_br/)
- - [Para construção Simples].(https://www.piskelapp.com/)
- - [Para construção Avançada].(https://krita.org/en/) 
- - [Para músicas de fundo].(encr.pw/Eaev1)
+ - [Para melhorar a qualidade dos desenhos](https://picwish.com/pt/photo-enhancer) 
+ - [Pesquisas de sprites e geral](https://br.pinterest.com/)
+ - [Editores Gerais 1 ](https://picsart.com/pt) 
+ - [Editores Gerais 2 ](https://www.canva.com/pt_br/)
+ - [Para construção Simples](https://www.piskelapp.com/)
+ - [Para construção Avançada](https://krita.org/en/) 
+ - [Para músicas de fundo](encr.pw/Eaev1)
 
 
