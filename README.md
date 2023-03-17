@@ -83,3 +83,24 @@ Projeto modelo: [adcipt20231](https://github.com/users/boidacarapreta/projects/4
 | [leandrofars](https://github.com/leandrofars)       | [Oktopus](https://github.com/leandrofars/oktopus)                                          | [Open Source TR369 Controller](https://github.com/users/leandrofars/projects/1) | 6         |
 | [Saga-games](https://github.com/Saga-games)         | [Trivert](https://github.com/Saga-games/Trivert)                                           | ?                                                                               | ?         |
 | [Higor](https://github.com/Higorass)                | [Don't look](https://github.com/Higorass/Don-t-look/tree/main)                             | [Projeto](https://github.com/users/Higorass/projects/1)                         |           |
+
+
+## Designer dos Jogos 
+
+Para os alunos no desenvolvimento artístico dos jogos, se tratando também da leitura inconciente dos jogadores.
+Dados para informação: 
+- Os personagens, o recomendado é ser 64X64, caso outro personagem seja maior ou menor, que seja proporcional, exemplo : 32X32, 128x128.
+- O tamanho da tela é 800x450
+
+Os principais links para as artes :
+ - [Para remover o fundo] (https://www.remove.bg/pt-br) 
+tem como editar, caso alguma parte não apareça
+ - [Para melhorar a qualidade dos desenhos] (https://picwish.com/pt/photo-enhancer) 
+ - [Pesquisas de sprites e geral] (https://br.pinterest.com/)
+ - [Editores Gerais 1 ] (https://picsart.com/pt) 
+ - [Editores Gerais 2 ] (https://www.canva.com/pt_br/)
+ - [Para construção Simples] (https://www.piskelapp.com/)
+ - [Para construção Avançada] (https://krita.org/en/) 
+ - [Para músicas de fundo] (encr.pw/Eaev1)
+
+
