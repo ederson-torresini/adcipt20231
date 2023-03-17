@@ -103,4 +103,10 @@ tem como editar, caso alguma parte não apareça
  - [Para construção Avançada](https://krita.org/en/) 
  - [Para músicas de fundo](encr.pw/Eaev1)
 
+O objetivo semana 1 : 
+ 
+  - Todas as referências, imagens de cenários, personagens, capas, objetivos do jogo e o desenvolvimento e percurso do jogo.
 
+Objetivo semana 2 : 
+
+- Iniciar a construção de personagens e cenários, deixando o portfólio do jogo montado.
