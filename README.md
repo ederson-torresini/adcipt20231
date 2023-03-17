@@ -70,45 +70,45 @@ Para o desenvolvimento de jogo Web em geral:
 
 Projeto modelo: [adcipt20231](https://github.com/users/boidacarapreta/projects/4).
 
-| Equipe                                              | Jogo                                                                                       | Projeto                                                                         | Entrega 1 |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | --------- |
-| [silentiummm](https://github.com/silentiummm)       | [Cattus](https://github.com/silentiummm/Cattus)                                            | ?                                                                               | ?         |
-| [lotus gamess](https://github.com/lotus-gamess)     | [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas) | ?                                                                               | ?         |
-| [ifgamessc](https://github.com/ifgamessc)           | [Folclore](https://github.com/ifgamessc/Folclore)                                          | [Kanban](https://github.com/orgs/ifgamessc/projects/1)                          | 0         |
-| [Lorum-Gaming](https://github.com/Lorum-Gaming)     | [God Between Us](https://github.com/Lorum-Gaming/God-Between-Us)                           | ?                                                                               | ?         |
-| [Hope-Games](https://github.com/Hope-Games)         | [The quest for knowledge](https://github.com/Hope-Games/jogo)                              | ?                                                                               | ?         |
-| [ja-on1](https://github.com/ja-on1/jogo1)           | [João & Maria: The order of warder](https://github.com/ja-on1/jogo1)                       | ?                                                                               | ?         |
-| [AbleTecnologia](https://github.com/AbleTecnologia) | [jogoifsc](https://github.com/AbleTecnologia/jogoifsc)                                     | ?                                                                               | ?         |
-| [BIGUA GAMES](https://github.com/BIGUA-GAMES)       | [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)                            | ?                                                                               | ?         |
-| [leandrofars](https://github.com/leandrofars)       | [Oktopus](https://github.com/leandrofars/oktopus)                                          | [Open Source TR369 Controller](https://github.com/users/leandrofars/projects/1) | 6         |
-| [Saga-games](https://github.com/Saga-games)         | [Trivert](https://github.com/Saga-games/Trivert)                                           | ?                                                                               | ?         |
-| [Higor](https://github.com/Higorass)                | [Don't look](https://github.com/Higorass/Don-t-look/tree/main)                             | [Projeto](https://github.com/users/Higorass/projects/1)                         |           |
+| Equipe                                              | Jogo                                                                                       | Projeto                                                                         | Entrega 1 | Entrega 2 |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | --------- | --------- |
+| [silentiummm](https://github.com/silentiummm)       | [Cattus](https://github.com/silentiummm/Cattus)                                            | [Cattus](https://github.com/orgs/silentiummm/projects/1)                        | 6         |           |
+| [lotus gamess](https://github.com/lotus-gamess)     | [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas) | [Em busca das flores magicas](https://github.com/orgs/lotus-gamess/projects/2)  | 6         |           |
+| [ifgamessc](https://github.com/ifgamessc)           | [Folclore](https://github.com/ifgamessc/Folclore)                                          | [Kanban](https://github.com/orgs/ifgamessc/projects/1)                          | 6         |           |
+| [Lorum-Gaming](https://github.com/Lorum-Gaming)     | [God Between Us](https://github.com/Lorum-Gaming/God-Between-Us)                           | [Gods between Us](https://github.com/orgs/Lorum-Gaming/projects/1/views/1)      | 8         |           |
+| [Hope-Games](https://github.com/Hope-Games)         | [The quest for knowledge](https://github.com/Hope-Games/jogo)                              | [Kanban](https://github.com/orgs/Hope-Games/projects/1)                         | 6         |           |
+| [ja-on1](https://github.com/ja-on1/jogo1)           | [João & Maria: The order of warder](https://github.com/ja-on1/jogo1)                       | [Kanban](https://github.com/orgs/ja-on1/projects/1)                             | 6         |           |
+| [AbleTecnologia](https://github.com/AbleTecnologia) | [jogoifsc](https://github.com/AbleTecnologia/jogoifsc)                                     | [Projeção de Tarefas](https://github.com/orgs/AbleTecnologia/projects/1)        | 6         |           |
+| [BIGUA GAMES](https://github.com/BIGUA-GAMES)       | [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)                            | [Notte Eterna Z](https://github.com/orgs/BIGUA-GAMES/projects/1)                | 6         |           |
+| [leandrofars](https://github.com/leandrofars)       | [Oktopus](https://github.com/leandrofars/oktopus)                                          | [Open Source TR369 Controller](https://github.com/users/leandrofars/projects/1) | 6         |           |
+| [Saga-games](https://github.com/Saga-games)         | [Trivert](https://github.com/Saga-games/Trivert)                                           | [Trivert](https://github.com/orgs/Saga-games/projects/1)                        | 6         |           |
+| [Higor](https://github.com/Higorass)                | [Don't look](https://github.com/Higorass/Don-t-look/tree/main)                             | [Projeto](https://github.com/users/Higorass/projects/1)                         | 0         |           |
 
-
-## Designer dos Jogos 
+## Designer dos Jogos
 
 Para os alunos no desenvolvimento artístico dos jogos, se tratando também da leitura inconciente dos jogadores.
-Dados para informação: 
+Dados para informação:
+
 - Os personagens, o recomendado é ser 64X64, caso outro personagem seja maior ou menor, que seja proporcional, exemplo : 32X32, 128x128.
 - O tamanho da tela é 800x450
 
 Os principais links para as artes :
- - [Para remover o fundo](https://www.remove.bg/pt-br) 
-tem como editar, caso alguma parte não apareça
- - [Para melhorar a qualidade dos desenhos](https://picwish.com/pt/photo-enhancer) 
- - [Para redimensionar as imagens](https://www.iloveimg.com/pt/redimensionar-imagem)
- - [Pesquisas de sprites e geral](https://br.pinterest.com/)
- - [Editores Gerais 1 ](https://picsart.com/pt) 
- - [Editores Gerais 2 ](https://www.canva.com/pt_br/)
- - [Para construção Simples](https://www.piskelapp.com/)
- - [Para construção Avançada](https://krita.org/en/) 
- - [Para músicas de fundo](encr.pw/Eaev1)
- 
 
-O objetivo semana 1 : 
- 
-  - Todas as referências, imagens de cenários, personagens, capas, objetivos do jogo e o desenvolvimento e percurso do jogo.
+- [Para remover o fundo](https://www.remove.bg/pt-br)
+  tem como editar, caso alguma parte não apareça
+- [Para melhorar a qualidade dos desenhos](https://picwish.com/pt/photo-enhancer)
+- [Para redimensionar as imagens](https://www.iloveimg.com/pt/redimensionar-imagem)
+- [Pesquisas de sprites e geral](https://br.pinterest.com/)
+- [Editores Gerais 1 ](https://picsart.com/pt)
+- [Editores Gerais 2 ](https://www.canva.com/pt_br/)
+- [Para construção Simples](https://www.piskelapp.com/)
+- [Para construção Avançada](https://krita.org/en/)
+- [Para músicas de fundo](encr.pw/Eaev1)
 
-Objetivo semana 2 : 
+O objetivo semana 1 :
+
+- Todas as referências, imagens de cenários, personagens, capas, objetivos do jogo e o desenvolvimento e percurso do jogo.
+
+Objetivo semana 2 :
 
 - Iniciar a construção de personagens e cenários, deixando o portfólio do jogo montado.
