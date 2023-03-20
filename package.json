@@ -1,5 +1,26 @@
 {
+  "name": "adcipt20231",
+  "version": "0.1.0",
+  "description": "Jogo Web com suporte a WebRTC",
+  "main": "servidor.js",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boidacarapreta/adcipt20231.git"
+  },
+  "keywords": [
+    "web",
+    "webrtc"
+  ],
+  "author": "Ederson Torresini <etorresini@ifsc.edu.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boidacarapreta/adcipt20231/issues"
+  },
+  "homepage": "https://github.com/boidacarapreta/adcipt20231#readme"
 }
