@@ -114,6 +114,9 @@ Os principais links para as artes :
 - [Detalhes da construção](https://www.youtube.com/watch?v=6Vu5tylaw10)
 - [Escala do personagem e cenário](https://www.youtube.com/watch?v=Gwrpw1YtuGo)
 - [Construção dos cenários mais complexos](https://www.youtube.com/watch?v=tFApGVTFlLk)
+- [Arquivo de 64BITS com 4 frames de movimento](https://pin.it/4VGgLHl)
+
+##Objetivos das semanas:
 
 O objetivo semana 1 :
 
