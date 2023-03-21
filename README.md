@@ -108,6 +108,12 @@ Os principais links para as artes :
 - [Para construção Simples](https://www.piskelapp.com/)
 - [Para construção Avançada](https://krita.org/en/)
 - [Para músicas de fundo](encr.pw/Eaev1)
+- [Para vídeos de construção de personagens](https://www.youtube.com/@AdamCYounis) 
+- [Direção do caminhar dos personagens)[https://www.youtube.com/watch?v=jUaytU-XJ-U]
+- [Construção desde a origem](https://www.youtube.com/watch?v=Iv4ZgH0bbSY) 
+- [Detalhes da construção](https://www.youtube.com/watch?v=6Vu5tylaw10)
+- [Escala do personagem e cenário](https://www.youtube.com/watch?v=Gwrpw1YtuGo)
+- [Construção dos cenários mais complexos](https://www.youtube.com/watch?v=tFApGVTFlLk)
 
 O objetivo semana 1 :
 
@@ -115,4 +121,39 @@ O objetivo semana 1 :
 
 Objetivo semana 2 :
 
-- Iniciar a construção de personagens e cenários, deixando o portfólio do jogo montado.
+- Iniciar a construção de personagens e cenários, separando o catálogo de desenhos do jogos em :
+1 - Remover fundo e proporção
+2 - Recortar e colar (união das fotos) 
+3 - Construção de personagens 
+
+Objetivo semana 3 :
+
+- Com a base do portfólio 1 pronto
+- E meio caminho e finalização do 2 
+
+Objetivo semana 4 :
+- 1 e 2 prontos
+- Construção dos personagens 
+
+Objetivo semana 5:
+- Construção de personagens
+- Inicialização de cenários 
+
+Objetivo semana 6: 
+- Evoluindo e construção de personagens 
+- Construção de cenários meio para fim 
+- Base das capas 
+
+Objetivo semana 7: 
+- Construção das capas 
+- FInalização dos cenários 
+- Finalização dos personagens 
+
+Objetivos semana 8 :
+- Capas, cenários e personagens prontos 
+
+Objetivo semana 9 :
+- Ajustes de movimentos, frames
+- Ajustes dos itens gerais 
+
+
