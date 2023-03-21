@@ -122,6 +122,7 @@ O objetivo semana 1 :
 Objetivo semana 2 :
 
 - Iniciar a construção de personagens e cenários, separando o catálogo de desenhos do jogos em :
+
 1 - Remover fundo e proporção
 2 - Recortar e colar (união das fotos) 
 3 - Construção de personagens 
