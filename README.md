@@ -109,7 +109,7 @@ Os principais links para as artes :
 - [Para construção Avançada](https://krita.org/en/)
 - [Para músicas de fundo](encr.pw/Eaev1)
 - [Para vídeos de construção de personagens](https://www.youtube.com/@AdamCYounis) 
-- [Direção do caminhar dos personagens)[https://www.youtube.com/watch?v=jUaytU-XJ-U]
+- [Direção do caminhar dos personagens](https://www.youtube.com/watch?v=jUaytU-XJ-U)
 - [Construção desde a origem](https://www.youtube.com/watch?v=Iv4ZgH0bbSY) 
 - [Detalhes da construção](https://www.youtube.com/watch?v=6Vu5tylaw10)
 - [Escala do personagem e cenário](https://www.youtube.com/watch?v=Gwrpw1YtuGo)
