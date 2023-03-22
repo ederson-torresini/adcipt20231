@@ -157,7 +157,7 @@ Objetivos semana 8 :
 - Capas, cenários e personagens prontos 
 
 Objetivo semana 9 :
-- Ajustes de movimentos, frames
+- Ajustes de movimentos (frames) 
 - Ajustes dos itens gerais 
 
 
