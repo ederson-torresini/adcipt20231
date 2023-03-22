@@ -107,7 +107,7 @@ Os principais links para as artes :
 - [Editores Gerais 2 ](https://www.canva.com/pt_br/)
 - [Para construção Simples](https://www.piskelapp.com/)
 - [Para construção Avançada](https://krita.org/en/)
-- [Para músicas de fundo](encr.pw/Eaev1)
+- [Para músicas de fundo](https://www.salamisound.com/pt/jogo-sounds)
 - [Para vídeos de construção de personagens](https://www.youtube.com/@AdamCYounis) 
 - [Direção do caminhar dos personagens](https://www.youtube.com/watch?v=jUaytU-XJ-U)
 - [Construção desde a origem](https://www.youtube.com/watch?v=Iv4ZgH0bbSY) 
