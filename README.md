@@ -82,7 +82,7 @@ Projeto modelo: [adcipt20231](https://github.com/users/boidacarapreta/projects/4
 | [BIGUA GAMES](https://github.com/BIGUA-GAMES)       | [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)                            | [Notte Eterna Z](https://github.com/orgs/BIGUA-GAMES/projects/1)                | 6         |           |
 | [leandrofars](https://github.com/leandrofars)       | [Oktopus](https://github.com/leandrofars/oktopus)                                          | [Open Source TR369 Controller](https://github.com/users/leandrofars/projects/1) | 6         |           |
 | [Saga-games](https://github.com/Saga-games)         | [Trivert](https://github.com/Saga-games/Trivert)                                           | [Trivert](https://github.com/orgs/Saga-games/projects/1)                        | 6         |           |
-| [Higor](https://github.com/Higorass)                | [Don't look](https://github.com/Higorass/Don-t-look/tree/main)                             | [Projeto](https://github.com/users/Higorass/projects/1)                         | 0         |           |
+| [Higor](https://github.com/Higorass)                | [Don't look](https://github.com/Higorass/Don-t-look/tree/main)                             | [Projeto](https://github.com/users/Higorass/projects/1)                         | 6         |           |
 
 ## Designer dos Jogos
 
@@ -159,5 +159,3 @@ Objetivos semana 8 :
 Objetivo semana 9 :
 - Ajustes de movimentos (frames) 
 - Ajustes dos itens gerais 
-
-
