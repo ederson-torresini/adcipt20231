@@ -123,6 +123,7 @@ O objetivo semana 1 :
 - Todas as referências, imagens de cenários, personagens, capas, objetivos do jogo e o desenvolvimento e percurso do jogo.
 
 Objetivo semana 2 :
+* Na terça feira, necessito que todos os itens do objetivo da semana 1, estejam concluídos  estarei ausente na segunda-feira) 
 
 - Iniciar a construção de personagens e cenários, separando o catálogo de desenhos do jogos em :
 
