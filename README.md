@@ -18,7 +18,7 @@ Várias missões espaciais foram destacadas para os vários quadrantes do espaç
 
 E eles vieram. Em 2023, vários humanos mostraram-se propensos a serem extraídos. E uma data foi marcada para facilitar o processo: o dia da formatura do ensino médio, quando todos estariam reunidos no auditório do câmpus e, maravilha!, logo acima da nave.
 
-Entretanto, dois alunos chegaram mais cedo para o evento. Distraídos, vagaram pelos espaços do prédio, e encontraram uma passagem para a nave. Curiosos, inconsequentes, futuros heróis!, descobriram o plano de sequestro para o planeta _f_ e decidiram localizar o alienígena infiltrado na formatura antes que seja tarde demais. Mas quem será o impostor? Um professor? Um colega de classe? Não percam as aventuras de **Terra contra a Grande Mente**!
+Entretanto, dois alunos chegaram mais cedo para o evento. Distraídos, vagaram pelos espaços do prédio, e encontraram uma passagem para a nave. Curiosos, inconsequentes, futuros heróis!, descobriram o plano de sequestro para o planeta _c_ e decidiram localizar o alienígena infiltrado na formatura antes que seja tarde demais. Mas quem será o impostor? Um professor? Um colega de classe? Não percam as aventuras de **Terra contra a Grande Mente**!
 
 ## Regras do jogo
 
