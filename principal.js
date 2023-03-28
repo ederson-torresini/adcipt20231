@@ -1,8 +1,8 @@
-export default class CenaDeAbertura extends Phaser.Scene {
+export default class principal extends Phaser.Scene {
   constructor() {
-    super("abertura");
+    super("principal");
   }
-
+  
   preload() {}
 
   create() {

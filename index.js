@@ -1,5 +1,10 @@
+// Configuração do jogo
 import config from "./config.js";
-import CenaDeAbertura from "./cena.js";
+//
+// Importar código das cenas
+import abertura from "./abertura.js";
+import principal from "./principal.js";
+import encerramento from "./encerramento.js";
 
 class Game extends Phaser.Game {
   constructor() {
@@ -16,8 +21,12 @@ class Game extends Phaser.Game {
       console.log(err);
     }
     //
-    // Cenas
-    this.scene.add("abertura", CenaDeAbertura);
+    // Carregar as cenas
+    this.scene.add("abertura", abertura);
+    this.scene.add("principal", principal);
+    this.scene.add("encerramento", encerramento);
+    //
+    // Iniciar pela cena de abertura
     this.scene.start("abertura");
   }
 }
