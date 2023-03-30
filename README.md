@@ -320,7 +320,7 @@ Os principais links para as artes :
 - [Construção dos cenários mais complexos](https://www.youtube.com/watch?v=tFApGVTFlLk)
 - [Arquivo de 64BITS com 4 frames de movimento](https://pin.it/4VGgLHl)
 - Arquivo com tamanho de tela do jogo [New Piskel](https://user-images.githubusercontent.com/102801474/228325517-ebe57908-6b34-49f3-930f-81f2874e6fe7.png)
-
+- [Repositório com itens de pixel art, desde personagens, itens e cenários](https://opengameart.org/content/a-pixel-art-collection)
 OBS: Ao clicar no link, apertar botão direito em 'salvar como', depois executar no piskel
 
 
