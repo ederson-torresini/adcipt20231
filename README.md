@@ -300,8 +300,7 @@ Dados para informação:
 
 - Sprite pixel art *TANANA*( TANANA coloca o que deseja, ex: base, princesa) de preferência em inglês
 
-Os principais links para as artes :
-
+## Plataformas 
 - [Para remover o fundo](https://www.remove.bg/pt-br)
   *Tem como editar, caso alguma parte não apareça*
 - [Para melhorar a qualidade dos desenhos](https://picwish.com/pt/photo-enhancer)
@@ -312,12 +311,16 @@ Os principais links para as artes :
 - [Para construção Simples](https://www.piskelapp.com/)
 - [Para construção Avançada](https://krita.org/en/)
 - [Para músicas de fundo](https://www.salamisound.com/pt/jogo-sounds)
+
+## Tutoriais 
 - [Para vídeos de construção de personagens](https://www.youtube.com/@AdamCYounis) 
 - [Direção do caminhar dos personagens](https://www.youtube.com/watch?v=jUaytU-XJ-U)
 - [Construção desde a origem](https://www.youtube.com/watch?v=Iv4ZgH0bbSY) 
 - [Detalhes da construção](https://www.youtube.com/watch?v=6Vu5tylaw10)
 - [Escala do personagem e cenário](https://www.youtube.com/watch?v=Gwrpw1YtuGo)
 - [Construção dos cenários mais complexos](https://www.youtube.com/watch?v=tFApGVTFlLk)
+
+## Arquivos e Repositórios 
 - [Arquivo de 64BITS com 4 frames de movimento](https://pin.it/4VGgLHl)
 - Arquivo com tamanho de tela do jogo [New Piskel](https://user-images.githubusercontent.com/102801474/228325517-ebe57908-6b34-49f3-930f-81f2874e6fe7.png)
 - OBS: Ao clicar no link, apertar botão direito em 'salvar como', depois executar no piskel
