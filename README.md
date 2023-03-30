@@ -294,7 +294,9 @@ Para os alunos no desenvolvimento artístico dos jogos, se tratando também da l
 Dados para informação:
 
 - Os personagens, o recomendado é ser 64X64, caso outro personagem seja maior ou menor, que seja proporcional, exemplo : 32X32, 128x128.
-- O tamanho da tela é 800x450
+- O tamanho da tela é 800x450( link 
+- Recomendado construir os personagens no tamanho de 32, pois para expandir será simples, mas se necessitar reduzir, poderá perder características e deformar
+- 
 
 ## Códigos para pesquisa 
 
