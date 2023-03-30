@@ -47,7 +47,27 @@ O objetivo dos jogadores é, basicamente, identificar quem é o infiltrado na mu
 - Onde estão os objetos para coletar;
 - Disposição dos quebra-cabeças no tabuleiro.
 
-## Fluxogramas dos quebra-cabeças
+## Fluxogramas das cenas e quebra-cabeças
+
+### Cena de abertura
+
+A cena de abertura é basicamente uma imagem de fundo com um botão para iniciar o jogo.
+
+```mermaid
+flowchart TD
+  A([Início])
+  B[Cena de abertura]
+  C[Próxima cena:\nPrincipal]
+  Z([Fim])
+
+  A --> B
+  B --> |Usuário clica no botão| C
+  C --> Z
+```
+
+### Cena principal
+
+A cena principal é dividida em quatro quebra-cabeças sequenciais.
 
 Quebra-cabeça 1: os dois jogadores estão na entrada do auditório, conversando. A cada intervalo de tempo, cerca de 1 minuto, há um forte _flash_ de luz, como um raio, e seus movimentos parecem erráticos. Algo, portanto, está errado. Decidem, então, procurar por alguma informação, e para isso precisam decidir se o fazem juntos ou separados. Separados, conseguirão achar um laboratório trancado, cuja porta só pode ser aberta a distância - com uma chave remota que está do outro lado do mapa, no claviculário do prédio. Dentro do laboratório, há um documento com o plano alienígena. Porém, se fizerem a busca juntos, não haverá como abrir a porta, e o jogo termina com a nave levando os cérebros dos alunos embora.
 
@@ -55,12 +75,12 @@ Quebra-cabeça 1: os dois jogadores estão na entrada do auditório, conversando
 flowchart TD
   A([Início])
   B[2 jogadores no auditório]
-  C{Dividiram-se\nno mapa?}
+  C{Dividirem-se\nno mapa?}
   D[Separados]
   E[Juntos]
   F[Jogador A]
   G[Jogador B]
-  H[Fim do jogo]
+  H[Próxima cena:\nFim do jogo]
   I[Ativar comando da porta]
   J[Encontrar a porta]
   K[Passar pela porta]
@@ -69,7 +89,7 @@ flowchart TD
   Z([Fim])
 
   A --> B
-  B --> C
+  B --> |Narração com explicação inicial do jogo| C
   C -->|Sim| D
   D --> F
   D --> G
@@ -104,7 +124,7 @@ flowchart TD
   L[Sim]
   M[Não]
   N{Acabou o\ntempo?}  
-  X[Fim do jogo]
+  X[Próxima cena:\nFim do jogo]
   Y[Ler documento]
   Z([Fim])
 
@@ -148,7 +168,7 @@ flowchart TD
   E[Câmeras]
   F{Achou o\ndocumento?}
   G{Acabou o\ntempo?}
-  Y[Fim do jogo]
+  Y[Próxima cena:\nFim do jogo]
   Z([Fim])
 
   A --> B
@@ -176,8 +196,8 @@ flowchart TD
   F{Chegaram no auditório?}
   G{Acabou o tempo?}
   H{Identificaram\no verdadeiro\ninfiltrado?}
-  X[Final Feliz!]
-  Y[Fim do jogo]
+  X[Próxima cena:\nFinal Feliz!]
+  Y[Próxima cena:\nfim do jogo]
   Z([Fim])
 
   A --> B
@@ -197,6 +217,38 @@ flowchart TD
 
   X --> Z
   Y --> Z
+```
+
+### Cena de fim de jogo
+
+A cena de fim de jogo é uma imagem de fundo com um botão para retornar ao início da cena principal.
+
+```mermaid
+flowchart TD
+  A([Início])
+  B[Cena de fim de jogo]
+  C[Próxima cena:\nPrincipal]
+  Z([Fim])
+
+  A --> B
+  B --> |Usuário clica no botão| C
+  C --> Z
+```
+
+### Cena de final feliz
+
+A cena de final feliz é um vídeo com os créditos e, ao após a sua exibição, aparece um botão para retornar ao início da cena de abertura.
+
+```mermaid
+flowchart TD
+  A([Início])
+  B[Cena de\nfinal feliz com\nvídeo de créditos]
+  C[Próxima cena:\nAbertura]
+  Z([Fim])
+
+  A --> B
+  B --> |Usuário clica no botão| C
+  C --> Z
 ```
 
 ## Possíveis formas de receita
