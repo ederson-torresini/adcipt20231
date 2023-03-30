@@ -28,12 +28,12 @@ Ambos os jogadores têm canal de áudio ativado quando começa a partida, canal 
 
 Ambos os jogadores começam no centro do tabuleiro, que é maior que a tela. O tabuleiro está em plano cartesiano (2D) para movimentação dos personagens nos eixos X e Y. Cada jogador possui câmera própria, logo a apresentação do jogador será central na tela, com a movimentação do tabuleiro.
 
-Na tela há controle de movimentação para cada eixo (vertical e horizontal). Para tornar a experiência do jogo mais interessante, a cada intervalo de tempo (decrescente no desenrolar de cada partida) a tela fica totalmente de uma única cor (um _flash_ de luz) e os controle são embaralhados para ambos os jogadores. Em termos de história, são raios de controle mental lançados pelo infiltrado para chamar os alunos para a nave, o que gera desorientação. Isso significa que, em cada um desse intervalos, os direcionais da tela têm operação diferente. Exemplo:
+Na tela há controle de movimentação para cada eixo (vertical e horizontal). Para tornar a experiência do jogo mais interessante, a cada intervalo de tempo (decrescente no desenrolar de cada partida) a tela fica totalmente de uma única cor (um _flash_ de luz) e os controle são embaralhados para ambos os jogadores. Em termos de história, são raios de controle mental lançados pelo infiltrado para chamar os alunos para a nave, o que gera desorientação. Isso significa que, em cada um desse intervalos, os direcionais da tela têm operação diferente:
 
 - Primeiro intervalo: direcionais de cada jogadores operando normalmente.
-- Segundo intervalo: direcionais controlam os jogadores remotos.
-- Terceiro intervalo: direcionais ficam invertidos (de "cabeça para baixo").
-- Quarto intervalo: direcionais são misturados, onde o comando "para cima" controla ambos os personagens, "para baixo" significa jogador 1 para direita e jogador 2 para esquerda etc.
+- Segundo intervalo: direcionais ficam invertidos (de "cabeça para baixo").
+- Terceiro intervalo: direcionais controlam os jogadores remotos.
+- Quarto intervalo: direcionais são combinados, onde os comandos controlam ambos os personagens.
 
 Opcionalmente, camadas (_layers_) do tabuleiro (_tilemap_) podem ser alternadas, oferecendo obstáculos (_tiles_) distintos a cada intervalo de tempo.
 
@@ -46,6 +46,158 @@ O objetivo dos jogadores é, basicamente, identificar quem é o infiltrado na mu
 - Quem é o infiltrado;
 - Onde estão os objetos para coletar;
 - Disposição dos quebra-cabeças no tabuleiro.
+
+## Fluxogramas dos quebra-cabeças
+
+Quebra-cabeça 1: os dois jogadores estão na entrada do auditório, conversando. A cada intervalo de tempo, cerca de 1 minuto, há um forte _flash_ de luz, como um raio, e seus movimentos parecem erráticos. Algo, portanto, está errado. Decidem, então, procurar por alguma informação, e para isso precisam decidir se o fazem juntos ou separados. Separados, conseguirão achar um laboratório trancado, cuja porta só pode ser aberta a distância - com uma chave remota que está do outro lado do mapa, no claviculário do prédio. Dentro do laboratório, há um documento com o plano alienígena. Porém, se fizerem a busca juntos, não haverá como abrir a porta, e o jogo termina com a nave levando os cérebros dos alunos embora.
+
+```mermaid
+flowchart TD
+  A([Início])
+  B[2 jogadores no auditório]
+  C{Dividiram-se\nno mapa?}
+  D[Separados]
+  E[Juntos]
+  F[Jogador A]
+  G[Jogador B]
+  H[Fim do jogo]
+  I[Ativar comando da porta]
+  J[Encontrar a porta]
+  K[Passar pela porta]
+  L[Ler documento]
+  M{Acabou o\ntempo?}
+  Z([Fim])
+
+  A --> B
+  B --> C
+  C -->|Sim| D
+  D --> F
+  D --> G
+  C -->|Não| E
+  E --> M
+  M --> |Sim| H
+  M --> |Não| C
+  H --> Z
+  F --> I
+  G --> J
+  I --> K
+  J --> K
+  I --> Z
+  K --> L
+  L --> Z
+```
+
+Quebra-cabeça 2: o documento é o plano alienígena para levar os cérebros dos formandos para o seu planeta natal. O dois jogadores precisam, então, descobrir quem é o infiltrado. Há várias salas de professores, e o melhor é dividirem para conquistar, até porque como passaram pelo quebra-cabeça 1, o intervalo de troca de direcionais diminui pela metade - a cada 30 segundos.
+
+```mermaid
+flowchart TD
+  A([Início])
+  B[Jogador A]
+  C[Jogador B]
+  D[Sala de professores]
+  E{Achou o\ndocumento?}
+  F[Sim]
+  G[Não]
+  H{Acabou o\ntempo?}
+  J[Sala de professores]
+  K{Achou o\ndocumento?}
+  L[Sim]
+  M[Não]
+  N{Acabou o\ntempo?}  
+  X[Fim do jogo]
+  Y[Ler documento]
+  Z([Fim])
+
+  A --> B
+  A --> C
+  B --> D
+
+  subgraph N salas
+    D --> E
+    E --> F
+    E --> G
+    G --> H
+    H --> |Não| D
+  end
+  F --> Y
+  H --> |Sim| X
+
+  C --> J
+  subgraph N salas
+    J --> K
+    K --> L
+    K --> M
+    M --> N
+    N --> |Não| J
+  end
+
+  L --> Y
+  N --> |Sim| X
+  X --> Z
+  Y --> Z
+```
+
+Quebra-cabeças 3: o segundo documento indica que nas salas de aula brancas contêm informações para descobrir a identidade do infiltrado. Porém, ao entrar na sala branca, os jogadores perceberão que tudo é branco: paredes, mobília etc. Exceto um item: a câmera de segurança. Ou seja, é preciso ir até a portaria (ou direção do câmpus ou mesmo a sala da TI) para olhar as câmeras para um jogador auxiliar a movimentação do outro. O ideal, aqui, é usar a imagem do jogador da sala branca como minimapa (_minimap_) para auxílio a distância. O intervalo de troca de direcionais decai pela metade: 15 segundo.
+
+```mermaid
+flowchart TD
+  A([Início])
+  B[Jogador A]
+  C[Jogador B]
+  D[Sala branca]
+  E[Câmeras]
+  F{Achou o\ndocumento?}
+  G{Acabou o\ntempo?}
+  Y[Fim do jogo]
+  Z([Fim])
+
+  A --> B
+  A --> C
+  B --> D
+  C --> E
+  E --> |orienta no labirinto| D
+  D --> F
+  F --> |Sim| Z
+  F --> |Não| G
+  G --> |Sim| Y
+  G --> |Não| D
+  Y --> Z
+```
+
+Quebra-cabeças 4: o intervalo de troca de direcionais cai para meros 5 segundos. Agora, é preciso correr para chegarem, juntos, até o auditório, e apontar quem é o infiltrado antes que o jogo termine (mal). Aqui, uma contagem regressiva aparece na tela: ambos têm de estar no auditório em 30 segundos!
+
+```mermaid
+flowchart TD
+  A([Início])
+  B[Jogador A]
+  C[Jogador B]
+  D[Corredores]
+  E[Auditório]
+  F{Chegaram no auditório?}
+  G{Acabou o tempo?}
+  H{Identificaram\no verdadeiro\ninfiltrado?}
+  X[Final Feliz!]
+  Y[Fim do jogo]
+  Z([Fim])
+
+  A --> B
+  B --> D
+
+  A --> C
+  C --> D
+
+  D --> F
+  F --> |Não| G
+  G --> |Não| D
+  G --> |Sim| Y
+  F --> |Sim| E
+  E --> H
+  H --> |Não| Y
+  H --> |Sim| X
+
+  X --> Z
+  Y --> Z
+```
 
 ## Possíveis formas de receita
 
