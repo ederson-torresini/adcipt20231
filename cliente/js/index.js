@@ -1,9 +1,9 @@
 import config from "./config.js";
 
-import abertura from "./abertura.js";
-import principal from "./principal.js";
-import fim_do_jogo from "./fim-do-jogo.js";
-import final_feliz from "./final-feliz.js";
+import abertura from "./cena-abertura.js";
+import principal from "./cena-principal.js";
+import fim_do_jogo from "./cena-fim-do-jogo.js";
+import final_feliz from "./cena-final-feliz.js";
 
 class Game extends Phaser.Game {
   constructor() {
