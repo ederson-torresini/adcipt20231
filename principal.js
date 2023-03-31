@@ -2,72 +2,62 @@ export default class principal extends Phaser.Scene {
   constructor() {
     super("principal");
   }
-  
-  preload() {}
+
+  preload() {
+    this.load.spritesheet("robo-1", "./assets/robo-1.png", {
+      frameWidth: 64,
+      frameHeight: 64,
+    });
+
+    this.load.spritesheet("robo-2", "./assets/robo-2.png", {
+      frameWidth: 64,
+      frameHeight: 64,
+    });
+  }
 
   create() {
-    //
-    // Testar Geolocation API
-    this.txtCoords = this.add.text(50, 100, "", { fill: "#FFFFFF" });
-    this.game.navigator.geolocation.watchPosition(
-      (pos) => {
-        var coords = {
-          latitude: pos.coords.latitude,
-          longitude: pos.coords.longitude,
-        };
-        this.txtCoords.setText(
-          `Latitude: ${coords.latitude}\nLongitude: ${coords.longitude}`
-        );
-        if (this.game.socket) {
-          this.game.socket.emit("geolocation-api", coords);
-        }
-      },
-      (err) => {
-        console.error(`Erro (${err.code}): ${err.message}`);
-      }
-    );
-    //
-    // Testar Vibration API
-    this.add
-      .text(50, 200, "[pointerover + this.game.navigator]", { fill: "#FFFFFF" })
-      .setInteractive()
-      .on("pointerover", () => {
-        this.cameras.main.shake(1000);
-        this.game.navigator.vibrate([1000]);
-        if (this.game.socket) {
-          this.game.socket.emit("vibration-api", "1000 ms");
-        }
-      });
-    this.add
-      .text(50, 250, "[pointerdown + this.game.navigator]", { fill: "#FFFFFF" })
+    this.jogador_1 = this.physics.add
+      .sprite(200, 225, "robo-1")
       .setInteractive()
       .on("pointerdown", () => {
-        this.cameras.main.shake(1000);
-        this.game.navigator.vibrate([1000]);
-        if (this.game.socket) {
-          this.game.socket.emit("vibration-api", "1000 ms");
-        }
+        this.jogador_1.destroy();
+        this.jogador_2.destroy();
+        this.game.scene.start("fim-do-jogo");
       });
-    this.add
-      .text(50, 300, "[pointerover + window.navigator]", { fill: "#FFFFFF" })
-      .setInteractive()
-      .on("pointerover", () => {
-        this.cameras.main.shake(1000);
-        window.navigator.vibrate([1000]);
-        if (this.game.socket) {
-          this.game.socket.emit("vibration-api", "1000 ms");
-        }
-      });
-    this.add
-      .text(50, 350, "[pointerdown + window.navigator]", { fill: "#FFFFFF" })
+    this.anims.create({
+      key: "jogador-1-direita",
+      frames: this.anims.generateFrameNumbers("robo-1", {
+        start: 0,
+        end: 15,
+      }),
+      frameRate: 30,
+      repeat: -1,
+    });
+    this.jogador_1.anims.play("jogador-1-direita", true);
+
+    this.jogador_2 = this.physics.add
+      .sprite(600, 225, "robo-2")
       .setInteractive()
       .on("pointerdown", () => {
-        this.cameras.main.shake(1000);
-        window.navigator.vibrate([1000]);
-        if (this.game.socket) {
-          this.game.socket.emit("vibration-api", "1000 ms");
-        }
+        this.jogador_1.destroy();
+        this.jogador_2.destroy();
+        this.game.scene.start("final-feliz");
       });
+    this.anims.create({
+      key: "jogador-2-direita",
+      frames: this.anims.generateFrameNumbers("robo-2", {
+        start: 32,
+        end: 47,
+      }),
+      frameRate: 30,
+      repeat: -1,
+    });
+    this.jogador_2.anims.play("jogador-2-direita", true);
+
+
+
+
+
   }
 
   update() {}

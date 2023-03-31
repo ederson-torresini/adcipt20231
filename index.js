@@ -4,7 +4,8 @@ import config from "./config.js";
 // Importar código das cenas
 import abertura from "./abertura.js";
 import principal from "./principal.js";
-import encerramento from "./encerramento.js";
+import fim_do_jogo from "./fim-do-jogo.js";
+import final_feliz from "./final-feliz.js";
 
 class Game extends Phaser.Game {
   constructor() {
@@ -24,7 +25,8 @@ class Game extends Phaser.Game {
     // Carregar as cenas
     this.scene.add("abertura", abertura);
     this.scene.add("principal", principal);
-    this.scene.add("encerramento", encerramento);
+    this.scene.add("fim-do-jogo", fim_do_jogo);
+    this.scene.add("final-feliz", final_feliz);
     //
     // Iniciar pela cena de abertura
     this.scene.start("abertura");
