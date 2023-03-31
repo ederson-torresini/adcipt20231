@@ -53,11 +53,6 @@ export default class principal extends Phaser.Scene {
       repeat: -1,
     });
     this.jogador_2.anims.play("jogador-2-direita", true);
-
-
-
-
-
   }
 
   update() {}
