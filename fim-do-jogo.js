@@ -1,6 +1,6 @@
-export default class abertura extends Phaser.Scene {
+export default class fim_do_jogo extends Phaser.Scene {
   constructor() {
-    super("abertura");
+    super("fim-do-jogo");
   }
 
   preload() {
@@ -10,6 +10,7 @@ export default class abertura extends Phaser.Scene {
   create() {
     this.imagem = this.add
       .image(400, 225, "ifsc-sj-2014")
+      .setTint(0xff0000)
       .setInteractive()
       .on("pointerdown", () => {
         this.imagem.destroy();
@@ -17,7 +18,7 @@ export default class abertura extends Phaser.Scene {
         this.game.scene.start("principal");
       });
 
-    this.texto = this.add.text(490, 50, "Clique no prédio para entrar...", {
+    this.texto = this.add.text(490, 50, "Fim do jogo.", {
       fill: "#000000",
     });
   }
