@@ -17,7 +17,6 @@ export default class principal extends Phaser.Scene {
 
   create() {
     this.jogador_1 = this.physics.add.sprite(200, 225, "robo-1");
-    //
     this.anims.create({
       key: "jogador-1-direita",
       frames: this.anims.generateFrameNumbers("robo-1", {
@@ -27,11 +26,9 @@ export default class principal extends Phaser.Scene {
       frameRate: 30,
       repeat: -1,
     });
-    //
     this.jogador_1.anims.play("jogador-1-direita", true);
     //
     this.jogador_2 = this.physics.add.sprite(600, 225, "robo-2");
-    //
     this.anims.create({
       key: "jogador-2-direita",
       frames: this.anims.generateFrameNumbers("robo-2", {
@@ -41,7 +38,6 @@ export default class principal extends Phaser.Scene {
       frameRate: 30,
       repeat: -1,
     });
-    //
     this.jogador_2.anims.play("jogador-2-direita", true);
   }
 
