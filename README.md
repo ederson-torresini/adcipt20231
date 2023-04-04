@@ -123,7 +123,7 @@ flowchart TD
   K{Achou o\ndocumento?}
   L[Sim]
   M[Não]
-  N{Acabou o\ntempo?}  
+  N{Acabou o\ntempo?}
   X[Próxima cena:\nFim do jogo]
   Y[Ler documento]
   Z([Fim])
@@ -274,19 +274,19 @@ Para o desenvolvimento de jogo Web em geral:
 
 Projeto modelo: [adcipt20231](https://github.com/users/boidacarapreta/projects/4).
 
-| Equipe                                              | Jogo                                                                                       | Projeto                                                                         | Entrega 1 | Entrega 2 |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | --------- | --------- |
-| [silentiummm](https://github.com/silentiummm)       | [Cattus](https://github.com/silentiummm/Cattus)                                            | [Cattus](https://github.com/orgs/silentiummm/projects/1)                        | 6         |           |
-| [lotus gamess](https://github.com/lotus-gamess)     | [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas) | [Em busca das flores magicas](https://github.com/orgs/lotus-gamess/projects/2)  | 6         |           |
-| [ifgamessc](https://github.com/ifgamessc)           | [Folclore](https://github.com/ifgamessc/Folclore)                                          | [Kanban](https://github.com/orgs/ifgamessc/projects/1)                          | 6         |           |
-| [Lorum-Gaming](https://github.com/Lorum-Gaming)     | [God Between Us](https://github.com/Lorum-Gaming/God-Between-Us)                           | [Gods between Us](https://github.com/orgs/Lorum-Gaming/projects/1/views/1)      | 8         |           |
-| [Hope-Games](https://github.com/Hope-Games)         | [Maze of the past](https://github.com/Hope-Games/Maze-of-the-past-)                              | [Kanban](https://github.com/orgs/Hope-Games/projects/1)                         | 6         |           |
-| [ja-on1](https://github.com/ja-on1/jogo1)           | [João & Maria: The order of warder](https://github.com/ja-on1/jogo1)                       | [Kanban](https://github.com/orgs/ja-on1/projects/1)                             | 6         |           |
-| [AbleTecnologia](https://github.com/AbleTecnologia) | [jogoifsc](https://github.com/AbleTecnologia/jogoifsc)                                     | [Projeção de Tarefas](https://github.com/orgs/AbleTecnologia/projects/1)        | 6         |           |
-| [BIGUA GAMES](https://github.com/BIGUA-GAMES)       | [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)                            | [Notte Eterna Z](https://github.com/orgs/BIGUA-GAMES/projects/1)                | 6         |           |
-| [leandrofars](https://github.com/leandrofars)       | [Oktopus](https://github.com/leandrofars/oktopus)                                          | [Open Source TR369 Controller](https://github.com/users/leandrofars/projects/1) | 6         |           |
-| [Saga-games](https://github.com/Saga-games)         | [Trivert](https://github.com/Saga-games/Trivert)                                           | [Trivert](https://github.com/orgs/Saga-games/projects/1)                        | 6         |           |
-| [Higor](https://github.com/Higorass)                | [Don't look](https://github.com/Higorass/Don-t-look/tree/main)                             | [Projeto](https://github.com/users/Higorass/projects/1)                         | 6         |           |
+| Equipe                                              | Jogo                                                                                          | Projeto                                                                         | Entrega 1 | Entrega 2 |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------- | --------- |
+| [silentiummm](https://github.com/silentiummm)       | [Cattus](https://github.com/silentiummm/Cattus)                                               | [Cattus](https://github.com/orgs/silentiummm/projects/1)                        | 6         |           |
+| [lotus gamess](https://github.com/lotus-gamess)     | [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas)    | [Em busca das flores magicas](https://github.com/orgs/lotus-gamess/projects/2)  | 6         |           |
+| [ifgamessc](https://github.com/ifgamessc)           | [Folclore](https://github.com/ifgamessc/Folclore)                                             | [Kanban](https://github.com/orgs/ifgamessc/projects/1)                          | 6         |           |
+| [Lorum-Gaming](https://github.com/Lorum-Gaming)     | [God Between Us](https://github.com/Lorum-Gaming/God-Between-Us)                              | [Gods between Us](https://github.com/orgs/Lorum-Gaming/projects/1/views/1)      | 8         |           |
+| [Hope-Games](https://github.com/Hope-Games)         | [Maze of the past](https://github.com/Hope-Games/Maze-of-the-past-)                           | [Kanban](https://github.com/orgs/Hope-Games/projects/1)                         | 6         |           |
+| [ja-on1](https://github.com/ja-on1)                 | [João & Maria: The order of warder](https://github.com/ja-on1/Joao-Maria-The-order-of-warder) | [Kanban](https://github.com/orgs/ja-on1/projects/1)                             | 6         |           |
+| [AbleTecnologia](https://github.com/AbleTecnologia) | [jogoifsc](https://github.com/AbleTecnologia/jogoifsc)                                        | [Projeção de Tarefas](https://github.com/orgs/AbleTecnologia/projects/1)        | 6         |           |
+| [BIGUA GAMES](https://github.com/BIGUA-GAMES)       | [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)                               | [Notte Eterna Z](https://github.com/orgs/BIGUA-GAMES/projects/1)                | 6         |           |
+| [leandrofars](https://github.com/leandrofars)       | [Oktopus](https://github.com/leandrofars/oktopus)                                             | [Open Source TR369 Controller](https://github.com/users/leandrofars/projects/1) | 6         |           |
+| [Saga-games](https://github.com/Saga-games)         | [Trivert](https://github.com/Saga-games/Trivert)                                              | [Trivert](https://github.com/orgs/Saga-games/projects/1)                        | 6         |           |
+| [Higor](https://github.com/Higorass)                | [Don't look](https://github.com/Higorass/Don-t-look/tree/main)                                | [Projeto](https://github.com/users/Higorass/projects/1)                         | 6         |           |
 
 ## Designer dos Jogos
 
@@ -294,17 +294,18 @@ Para os alunos no desenvolvimento artístico dos jogos, se tratando também da l
 Dados para informação:
 
 - Os personagens, o recomendado é ser 64X64, caso outro personagem seja maior ou menor, que seja proporcional, exemplo : 32X32, 128x128.
-- O tamanho da tela é 800x450( link 
+- O tamanho da tela é 800x450( link
 - Recomendado construir os personagens no tamanho de 32, pois para expandir será simples, mas se necessitar reduzir, poderá perder características e deformar
-- 
+-
 
-## Códigos para pesquisa 
+## Códigos para pesquisa
 
-- Sprite pixel art *TANANA*( TANANA coloca o que deseja, ex: base, princesa) de preferência em inglês
+- Sprite pixel art _TANANA_( TANANA coloca o que deseja, ex: base, princesa) de preferência em inglês
 
-## Plataformas 
+## Plataformas
+
 - [Para remover o fundo](https://www.remove.bg/pt-br)
-  *Tem como editar, caso alguma parte não apareça*
+  _Tem como editar, caso alguma parte não apareça_
 - [Para melhorar a qualidade dos desenhos](https://picwish.com/pt/photo-enhancer)
 - [Para redimensionar as imagens](https://www.iloveimg.com/pt/redimensionar-imagem)
 - [Pesquisas de sprites e geral](https://br.pinterest.com/)
@@ -314,23 +315,23 @@ Dados para informação:
 - [Para construção Avançada](https://krita.org/en/)
 - [Para músicas de fundo](https://www.salamisound.com/pt/jogo-sounds)
 
-## Tutoriais 
-- [Para vídeos de construção de personagens](https://www.youtube.com/@AdamCYounis) 
+## Tutoriais
+
+- [Para vídeos de construção de personagens](https://www.youtube.com/@AdamCYounis)
 - [Direção do caminhar dos personagens](https://www.youtube.com/watch?v=jUaytU-XJ-U)
-- [Construção desde a origem](https://www.youtube.com/watch?v=Iv4ZgH0bbSY) 
+- [Construção desde a origem](https://www.youtube.com/watch?v=Iv4ZgH0bbSY)
 - [Detalhes da construção](https://www.youtube.com/watch?v=6Vu5tylaw10)
 - [Escala do personagem e cenário](https://www.youtube.com/watch?v=Gwrpw1YtuGo)
 - [Construção dos cenários mais complexos](https://www.youtube.com/watch?v=tFApGVTFlLk)
 
-## Arquivos e Repositórios 
+## Arquivos e Repositórios
+
 - [Arquivo de 64BITS com 4 frames de movimento](https://pin.it/4VGgLHl)
 - Arquivo com tamanho de tela do jogo [New Piskel](https://user-images.githubusercontent.com/102801474/228325517-ebe57908-6b34-49f3-930f-81f2874e6fe7.png)
 - OBS: Ao clicar no link, apertar botão direito em 'salvar como', depois executar no piskel
 - [Repositório com itens de pixel art, desde personagens, itens e cenários](https://opengameart.org/content/a-pixel-art-collection)
 - [Repositório de artes 2](https://craftpix.net/freebies/free-vampire-pixel-art-sprite-sheets/)
 - [Repositório de artes 3](https://www.freepik.com/free-photos-vectors/pixel-game-art)
-
-
 
 ## Objetivos das semanas:
 
@@ -339,40 +340,47 @@ O objetivo semana 1 :
 - Todas as referências, imagens de cenários, personagens, capas, objetivos do jogo e o desenvolvimento e percurso do jogo.
 
 Objetivo semana 2 :
-* Na terça feira, necessito que todos os itens do objetivo da semana 1, estejam concluídos  estarei ausente na segunda-feira) 
 
-- Iniciar a construção de personagens e cenários, separando o catálogo de desenhos do jogos em :
+- Na terça feira, necessito que todos os itens do objetivo da semana 1, estejam concluídos estarei ausente na segunda-feira)
 
-- 1 Remover fundo e proporção
-- 2 Recortar e colar (união das fotos) 
-- 3 Construção de personagens 
+* Iniciar a construção de personagens e cenários, separando o catálogo de desenhos do jogos em :
+
+* 1 Remover fundo e proporção
+* 2 Recortar e colar (união das fotos)
+* 3 Construção de personagens
 
 Objetivo semana 3 :
 
 - Com a base do portfólio 1 pronto
-- E meio caminho e finalização do 2 
+- E meio caminho e finalização do 2
 
 Objetivo semana 4 :
+
 - 1 e 2 prontos
-- Construção dos personagens 
+- Construção dos personagens
 
 Objetivo semana 5:
+
 - Construção de personagens
-- Inicialização de cenários 
+- Inicialização de cenários
 
-Objetivo semana 6: 
-- Evoluindo e construção de personagens 
-- Construção de cenários meio para fim 
-- Base das capas 
+Objetivo semana 6:
 
-Objetivo semana 7: 
-- Construção das capas 
-- FInalização dos cenários 
-- Finalização dos personagens 
+- Evoluindo e construção de personagens
+- Construção de cenários meio para fim
+- Base das capas
+
+Objetivo semana 7:
+
+- Construção das capas
+- FInalização dos cenários
+- Finalização dos personagens
 
 Objetivos semana 8 :
-- Capas, cenários e personagens prontos 
+
+- Capas, cenários e personagens prontos
 
 Objetivo semana 9 :
-- Ajustes de movimentos (frames) 
-- Ajustes dos itens gerais 
+
+- Ajustes de movimentos (frames)
+- Ajustes dos itens gerais
