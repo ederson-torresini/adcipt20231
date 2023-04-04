@@ -327,6 +327,7 @@ Dados para informação:
 - [Construção dos cenários mais complexos](https://www.youtube.com/watch?v=tFApGVTFlLk)
 - [Sobre movimentação dos personagens, para movimentos especificos](https://www.youtube.com/watch?v=UH_jFOa4t6Q) 
 - [Sobre movimentação](https://www.youtube.com/watch?v=M-ozjTe8TyM) 
+- [COnstrução aseprite](https://www.youtube.com/watch?v=iWvfaiiVuDI&t=10s) 
 
 ## Arquivos e Repositórios
 
