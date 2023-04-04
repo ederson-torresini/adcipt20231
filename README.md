@@ -312,8 +312,9 @@ Dados para informação:
 - [Pesquisas de sprites e geral](https://br.pinterest.com/)
 - [Editores Gerais 1 ](https://picsart.com/pt)
 - [Editores Gerais 2 ](https://www.canva.com/pt_br/)
-- [Para construção Simples](https://www.piskelapp.com/)
-- [Para construção Avançada](https://krita.org/en/)
+- [Para construção Simples](https://www.piskelapp.com/) *online
+- [Para construção intermediária](https://steamunlocked.net/aseprite-free-download/) *instala
+- [Para construção Avançada](https://krita.org/en/) *instala
 - [Para músicas de fundo](https://www.salamisound.com/pt/jogo-sounds)
 
 ## Tutoriais
@@ -324,6 +325,8 @@ Dados para informação:
 - [Detalhes da construção](https://www.youtube.com/watch?v=6Vu5tylaw10)
 - [Escala do personagem e cenário](https://www.youtube.com/watch?v=Gwrpw1YtuGo)
 - [Construção dos cenários mais complexos](https://www.youtube.com/watch?v=tFApGVTFlLk)
+- [Sobre movimentação dos personagens, para movimentos especificos](https://www.youtube.com/watch?v=UH_jFOa4t6Q) 
+- [Sobre movimentação](https://www.youtube.com/watch?v=M-ozjTe8TyM) 
 
 ## Arquivos e Repositórios
 
