@@ -270,7 +270,7 @@ Para o desenvolvimento de jogo Web em geral:
 - [Itch: top games made with Phaser](https://itch.io/games/made-with-phaser)
 - [Indie Games Plus](https://indiegamesplus.com)
 
-## Jogos e aplicativos do alunos
+## Jogos e aplicativos dos alunos
 
 Projeto modelo: [adcipt20231](https://github.com/users/boidacarapreta/projects/4).
 
