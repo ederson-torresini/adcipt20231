@@ -8,6 +8,7 @@ export default class abertura extends Phaser.Scene {
   }
 
   create() {
+    /* Imagem de fundo */
     this.imagem = this.add
       .image(400, 225, "ifsc-sj-2014")
       .setInteractive()
@@ -17,6 +18,7 @@ export default class abertura extends Phaser.Scene {
         this.game.scene.start("principal");
       });
 
+    /* Texto em destaque */
     this.texto = this.add.text(490, 50, "Clique no prédio para entrar...", {
       fill: "#000000",
     });

@@ -8,6 +8,7 @@ export default class fim_do_jogo extends Phaser.Scene {
   }
 
   create() {
+    /* Imagem de fundo */
     this.imagem = this.add
       .image(400, 225, "ifsc-sj-2014")
       .setTint(0xff0000)
@@ -18,6 +19,7 @@ export default class fim_do_jogo extends Phaser.Scene {
         this.game.scene.start("principal");
       });
 
+    /* Texto em destaque */
     this.texto = this.add.text(490, 50, "Fim do jogo.", {
       fill: "#000000",
     });
