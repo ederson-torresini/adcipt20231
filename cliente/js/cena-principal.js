@@ -66,6 +66,7 @@ export default class principal extends Phaser.Scene {
       repeat: -1,
     });
     this.jogador_1.anims.play("jogador-1-direita", true);
+    this.jogador_1.setVelocityY(-50);
     //
     // Personagem 2
     this.jogador_2 = this.physics.add.sprite(600, 225, "robo-2");
@@ -79,6 +80,15 @@ export default class principal extends Phaser.Scene {
       repeat: -1,
     });
     this.jogador_2.anims.play("jogador-2-direita", true);
+    this.jogador_2.setVelocityX(50);
+    //
+    // Colisões
+    // Por tile
+    this.chao.setCollisionByProperty({ collides: true });
+    this.parede.setCollisionByProperty({ collides: true });
+    // Colisão entre personagem 1 e mapa (por layer)
+    this.physics.add.collider(this.jogador_1, this.chao, null, null, this);
+    this.physics.add.collider(this.jogador_1, this.parede, null, null, this);
   }
 
   update() {}
