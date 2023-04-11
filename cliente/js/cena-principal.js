@@ -13,13 +13,13 @@ export default class principal extends Phaser.Scene {
     /* Tilesets */
     this.load.image("terreno", "./assets/terreno.png");
     this.load.image("ARCas", "./assets/ARCas.png");
-    
+
     /* Personagem 1 */
     this.load.spritesheet("robo-1", "./assets/robo-1.png", {
       frameWidth: 64,
       frameHeight: 64,
     });
-    
+
     /* Personagem 2 */
     this.load.spritesheet("robo-2", "./assets/robo-2.png", {
       frameWidth: 64,
@@ -54,9 +54,20 @@ export default class principal extends Phaser.Scene {
     );
 
     /* Personagem 1 */
-    this.jogador_1 = this.physics.add.sprite(200, 225, "robo-1");
+    this.jogador_1 = this.physics.add.sprite(300, 225, "robo-1");
+
     this.anims.create({
-      key: "jogador-1-direita",
+      key: "jogador-1-cima",
+      frames: this.anims.generateFrameNumbers("robo-1", {
+        start: 64,
+        end: 79,
+      }),
+      frameRate: 30,
+      repeat: -1,
+    });
+
+    this.anims.create({
+      key: "jogador-1-baixo",
       frames: this.anims.generateFrameNumbers("robo-1", {
         start: 0,
         end: 15,
@@ -65,17 +76,28 @@ export default class principal extends Phaser.Scene {
       repeat: -1,
     });
 
-    /* Personagem 2 */
-    this.jogador_2 = this.physics.add.sprite(600, 225, "robo-2");
     this.anims.create({
-      key: "jogador-2-direita",
-      frames: this.anims.generateFrameNumbers("robo-2", {
+      key: "jogador-1-esquerda",
+      frames: this.anims.generateFrameNumbers("robo-1", {
+        start: 96,
+        end: 111,
+      }),
+      frameRate: 30,
+      repeat: -1,
+    });
+
+    this.anims.create({
+      key: "jogador-1-direita",
+      frames: this.anims.generateFrameNumbers("robo-1", {
         start: 32,
         end: 47,
       }),
       frameRate: 30,
       repeat: -1,
     });
+
+    /* Personagem 2 */
+    this.jogador_2 = this.add.sprite(600, 225, "robo-2");
 
     /* Colisões por tile */
     this.terreno.setCollisionByProperty({ collides: true });
