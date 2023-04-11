@@ -188,9 +188,29 @@ export default class principal extends Phaser.Scene {
     this.ARCas.setCollisionByProperty({ collides: true });
 
     /* Colisão entre personagem 1 e mapa (por layer) */
-    this.physics.add.collider(this.jogador_1, this.terreno, null, null, this);
-    this.physics.add.collider(this.jogador_1, this.ARCas, null, null, this);
+    this.physics.add.collider(
+      this.jogador_1,
+      this.terreno,
+      this.collision,
+      null,
+      this
+    );
+    this.physics.add.collider(
+      this.jogador_1,
+      this.ARCas,
+      this.collision,
+      null,
+      this
+    );
   }
 
   update() {}
+
+  collision() {
+    /* Tremer a tela por 100 ms com baixa intensidade (0.01) */
+    this.cameras.main.shake(100, 0.01);
+
+    /* Vibrar o celular pelos mesmos 100 ms */
+    window.navigator.vibrate([100]);
+  }
 }
