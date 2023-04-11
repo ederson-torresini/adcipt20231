@@ -57,16 +57,10 @@ export default class principal extends Phaser.Scene {
     this.tileset_principal_terreo_ARCas =
       this.mapa_principal_terreo.addTilesetImage("ARCas", "ARCas");
 
-    /* Camadas */
+    /* Camada 0: terreno */
     this.terreno = this.mapa_principal_terreo.createLayer(
       "terreno",
       this.tileset_principal_terreo_terreno,
-      0,
-      0
-    );
-    this.ARCas = this.mapa_principal_terreo.createLayer(
-      "ARCas",
-      this.tileset_principal_terreo_ARCas,
       0,
       0
     );
@@ -126,16 +120,24 @@ export default class principal extends Phaser.Scene {
     /* Personagem 2 */
     this.jogador_2 = this.add.sprite(600, 225, "robo-2");
 
+    /* Camada 1: ARCas */
+    this.ARCas = this.mapa_principal_terreo.createLayer(
+      "ARCas",
+      this.tileset_principal_terreo_ARCas,
+      0,
+      0
+    );
+
     /* Botões */
     this.cima = this.add
       .sprite(120, 330, "cima", 0)
       .setInteractive()
-      .on("pointerdown", () => {
+      .on("pointerover", () => {
         this.cima.setFrame(1);
         this.jogador_1.setVelocityY(-100);
         this.jogador_1.anims.play("jogador-1-cima");
       })
-      .on("pointerup", () => {
+      .on("pointerout", () => {
         this.cima.setFrame(0);
         this.jogador_1.setVelocityY(0);
         this.jogador_1.anims.play("jogador-1-parado");
@@ -144,12 +146,12 @@ export default class principal extends Phaser.Scene {
     this.baixo = this.add
       .sprite(120, 400, "baixo", 0)
       .setInteractive()
-      .on("pointerdown", () => {
+      .on("pointerover", () => {
         this.baixo.setFrame(1);
         this.jogador_1.setVelocityY(100);
         this.jogador_1.anims.play("jogador-1-baixo");
       })
-      .on("pointerup", () => {
+      .on("pointerout", () => {
         this.baixo.setFrame(0);
         this.jogador_1.setVelocityY(0);
         this.jogador_1.anims.play("jogador-1-parado");
@@ -158,12 +160,12 @@ export default class principal extends Phaser.Scene {
     this.esquerda = this.add
       .sprite(50, 400, "esquerda", 0)
       .setInteractive()
-      .on("pointerdown", () => {
+      .on("pointerover", () => {
         this.esquerda.setFrame(1);
         this.jogador_1.setVelocityX(-100);
         this.jogador_1.anims.play("jogador-1-esquerda");
       })
-      .on("pointerup", () => {
+      .on("pointerout", () => {
         this.esquerda.setFrame(0);
         this.jogador_1.setVelocityX(0);
         this.jogador_1.anims.play("jogador-1-parado");
@@ -172,12 +174,12 @@ export default class principal extends Phaser.Scene {
     this.direita = this.add
       .sprite(190, 400, "direita", 0)
       .setInteractive()
-      .on("pointerdown", () => {
+      .on("pointerover", () => {
         this.direita.setFrame(1);
         this.jogador_1.setVelocityX(100);
         this.jogador_1.anims.play("jogador-1-direita");
       })
-      .on("pointerup", () => {
+      .on("pointerout", () => {
         this.direita.setFrame(0);
         this.jogador_1.setVelocityX(0);
         this.jogador_1.anims.play("jogador-1-parado");
