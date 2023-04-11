@@ -25,6 +25,24 @@ export default class principal extends Phaser.Scene {
       frameWidth: 64,
       frameHeight: 64,
     });
+
+    /* Botões */
+    this.load.spritesheet("cima", "./assets/cima.png", {
+      frameWidth: 64,
+      frameHeight: 64,
+    });
+    this.load.spritesheet("baixo", "./assets/baixo.png", {
+      frameWidth: 64,
+      frameHeight: 64,
+    });
+    this.load.spritesheet("esquerda", "./assets/esquerda.png", {
+      frameWidth: 64,
+      frameHeight: 64,
+    });
+    this.load.spritesheet("direita", "./assets/direita.png", {
+      frameWidth: 64,
+      frameHeight: 64,
+    });
   }
 
   create() {
@@ -55,6 +73,15 @@ export default class principal extends Phaser.Scene {
 
     /* Personagem 1 */
     this.jogador_1 = this.physics.add.sprite(300, 225, "robo-1");
+
+    this.anims.create({
+      key: "jogador-1-parado",
+      frames: this.anims.generateFrameNumbers("robo-1", {
+        start: 0,
+        end: 0,
+      }),
+      frameRate: 1,
+    });
 
     this.anims.create({
       key: "jogador-1-cima",
@@ -98,6 +125,63 @@ export default class principal extends Phaser.Scene {
 
     /* Personagem 2 */
     this.jogador_2 = this.add.sprite(600, 225, "robo-2");
+
+    /* Botões */
+    this.cima = this.add
+      .sprite(120, 330, "cima", 0)
+      .setInteractive()
+      .on("pointerdown", () => {
+        this.cima.setFrame(1);
+        this.jogador_1.setVelocityY(-100);
+        this.jogador_1.anims.play("jogador-1-cima");
+      })
+      .on("pointerup", () => {
+        this.cima.setFrame(0);
+        this.jogador_1.setVelocityY(0);
+        this.jogador_1.anims.play("jogador-1-parado");
+      });
+
+    this.baixo = this.add
+      .sprite(120, 400, "baixo", 0)
+      .setInteractive()
+      .on("pointerdown", () => {
+        this.baixo.setFrame(1);
+        this.jogador_1.setVelocityY(100);
+        this.jogador_1.anims.play("jogador-1-baixo");
+      })
+      .on("pointerup", () => {
+        this.baixo.setFrame(0);
+        this.jogador_1.setVelocityY(0);
+        this.jogador_1.anims.play("jogador-1-parado");
+      });
+
+    this.esquerda = this.add
+      .sprite(50, 400, "esquerda", 0)
+      .setInteractive()
+      .on("pointerdown", () => {
+        this.esquerda.setFrame(1);
+        this.jogador_1.setVelocityX(-100);
+        this.jogador_1.anims.play("jogador-1-esquerda");
+      })
+      .on("pointerup", () => {
+        this.esquerda.setFrame(0);
+        this.jogador_1.setVelocityX(0);
+        this.jogador_1.anims.play("jogador-1-parado");
+      });
+
+    this.direita = this.add
+      .sprite(190, 400, "direita", 0)
+      .setInteractive()
+      .on("pointerdown", () => {
+        this.direita.setFrame(1);
+        this.jogador_1.setVelocityX(100);
+        this.jogador_1.anims.play("jogador-1-direita");
+      })
+      .on("pointerup", () => {
+        this.direita.setFrame(0);
+        this.jogador_1.setVelocityX(0);
+        this.jogador_1.anims.play("jogador-1-parado");
+      });
 
     /* Colisões por tile */
     this.terreno.setCollisionByProperty({ collides: true });
