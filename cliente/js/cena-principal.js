@@ -134,56 +134,60 @@ export default class principal extends Phaser.Scene {
       .setInteractive()
       .on("pointerover", () => {
         this.cima.setFrame(1);
-        this.jogador_1.setVelocityY(-100);
+        this.jogador_1.setVelocityY(-200);
         this.jogador_1.anims.play("jogador-1-cima");
       })
       .on("pointerout", () => {
         this.cima.setFrame(0);
         this.jogador_1.setVelocityY(0);
         this.jogador_1.anims.play("jogador-1-parado");
-      });
+      })
+      .setScrollFactor(0);
 
     this.baixo = this.add
       .sprite(120, 400, "baixo", 0)
       .setInteractive()
       .on("pointerover", () => {
         this.baixo.setFrame(1);
-        this.jogador_1.setVelocityY(100);
+        this.jogador_1.setVelocityY(200);
         this.jogador_1.anims.play("jogador-1-baixo");
       })
       .on("pointerout", () => {
         this.baixo.setFrame(0);
         this.jogador_1.setVelocityY(0);
         this.jogador_1.anims.play("jogador-1-parado");
-      });
+      })
+      .setScrollFactor(0);
 
     this.esquerda = this.add
       .sprite(50, 400, "esquerda", 0)
       .setInteractive()
       .on("pointerover", () => {
         this.esquerda.setFrame(1);
-        this.jogador_1.setVelocityX(-100);
+        this.jogador_1.setVelocityX(-200);
         this.jogador_1.anims.play("jogador-1-esquerda");
       })
       .on("pointerout", () => {
         this.esquerda.setFrame(0);
         this.jogador_1.setVelocityX(0);
         this.jogador_1.anims.play("jogador-1-parado");
-      });
+      })
+      .setScrollFactor(0);
 
     this.direita = this.add
       .sprite(190, 400, "direita", 0)
       .setInteractive()
       .on("pointerover", () => {
         this.direita.setFrame(1);
-        this.jogador_1.setVelocityX(100);
+        this.jogador_1.setVelocityX(200);
         this.jogador_1.anims.play("jogador-1-direita");
       })
       .on("pointerout", () => {
         this.direita.setFrame(0);
         this.jogador_1.setVelocityX(0);
         this.jogador_1.anims.play("jogador-1-parado");
-      });
+      })
+      .setScrollFactor(0);
 
     /* Colisões por tile */
     this.terreno.setCollisionByProperty({ collides: true });
@@ -204,6 +208,14 @@ export default class principal extends Phaser.Scene {
       null,
       this
     );
+
+    /* Colisão com os limites da cena */
+    this.jogador_1.setCollideWorldBounds(true);
+
+    /* Cena (960) maior que a tela (800x450) */
+    this.cameras.main.setBounds(0, 0, 960, 960);
+    this.physics.world.setBounds(0, 0, 960, 960);
+    this.cameras.main.startFollow(this.jogador_1);
   }
 
   update() {}

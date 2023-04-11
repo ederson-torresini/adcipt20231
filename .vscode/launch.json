@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Servidor",
+      "skipFiles": ["<node_internals>/**"],
+      "cwd": "${workspaceFolder}/servidor",
+      "program": "servidor.js"
+    }
+  ]
+}
