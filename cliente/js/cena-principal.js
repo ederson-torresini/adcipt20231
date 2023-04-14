@@ -26,12 +26,18 @@ export default class principal extends Phaser.Scene {
       frameHeight: 64,
     });
 
+    /* Artefato */
+    this.load.spritesheet("cristal", "./assets/cristal.png", {
+      frameWidth: 32,
+      frameHeight: 56,
+    });
+
     /* Botões */
     this.load.spritesheet("cima", "./assets/cima.png", {
       frameWidth: 64,
       frameHeight: 64,
     });
-    
+
     this.load.spritesheet("baixo", "./assets/baixo.png", {
       frameWidth: 64,
       frameHeight: 64,
@@ -57,7 +63,7 @@ export default class principal extends Phaser.Scene {
     /* Tilesets */
     this.tileset_principal_terreo_terreno =
       this.mapa_principal_terreo.addTilesetImage("terreno", "terreno");
-    
+
     this.tileset_principal_terreo_ARCas =
       this.mapa_principal_terreo.addTilesetImage("ARCas", "ARCas");
 
@@ -123,6 +129,20 @@ export default class principal extends Phaser.Scene {
 
     /* Personagem 2 */
     this.jogador_2 = this.add.sprite(600, 225, "robo-2");
+
+    this.cristal = this.physics.add.sprite(700, 300, "cristal");
+
+    this.anims.create({
+      key: "cristal-brilhando",
+      frames: this.anims.generateFrameNumbers("cristal", {
+        start: 0,
+        end: 3,
+      }),
+      frameRate: 4,
+      repeat: -1,
+    });
+
+    this.cristal.anims.play("cristal-brilhando");
 
     /* Camada 1: ARCas */
     this.ARCas = this.mapa_principal_terreo.createLayer(
@@ -201,7 +221,7 @@ export default class principal extends Phaser.Scene {
     this.physics.add.collider(
       this.jogador_1,
       this.terreno,
-      this.collision,
+      this.colidir_mapa,
       null,
       this
     );
@@ -209,7 +229,7 @@ export default class principal extends Phaser.Scene {
     this.physics.add.collider(
       this.jogador_1,
       this.ARCas,
-      this.collision,
+      this.colidir_mapa,
       null,
       this
     );
@@ -225,7 +245,7 @@ export default class principal extends Phaser.Scene {
 
   update() {}
 
-  collision() {
+  colidir_mapa() {
     /* Tremer a tela por 100 ms com baixa intensidade (0.01) */
     this.cameras.main.shake(100, 0.01);
 
