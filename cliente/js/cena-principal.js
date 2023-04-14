@@ -241,6 +241,15 @@ export default class principal extends Phaser.Scene {
     this.cameras.main.setBounds(0, 0, 960, 960);
     this.physics.world.setBounds(0, 0, 960, 960);
     this.cameras.main.startFollow(this.jogador_1);
+
+    /* Colisão com objeto */
+    this.physics.add.collider(
+      this.jogador_1,
+      this.cristal,
+      this.coletar_cristal,
+      null,
+      this
+    );
   }
 
   update() {}
@@ -251,5 +260,9 @@ export default class principal extends Phaser.Scene {
 
     /* Vibrar o celular pelos mesmos 100 ms */
     window.navigator.vibrate([100]);
+  }
+
+  coletar_cristal() {
+    this.cristal.disableBody(true, true);
   }
 }
