@@ -263,6 +263,8 @@ export default class principal extends Phaser.Scene {
   }
 
   coletar_cristal() {
+
+    /* Ocultar e remover física/colisão */
     this.cristal.disableBody(true, true);
   }
 }
