@@ -54,11 +54,16 @@ export default class principal extends Phaser.Scene {
     });
 
     /* Sons */
+    this.load.audio("techno-trilha", "./assets/techno.mp3");
     this.load.audio("metal-som", "./assets/metal.mp3");
     this.load.audio("cristal-som", "./assets/cristal.mp3");
   }
 
   create() {
+    /* Trilha sonora */
+    this.trilha = this.sound.add("techno-trilha");
+    this.trilha.play();
+
     /* Tilemap */
     this.mapa_principal_terreo = this.make.tilemap({
       key: "mapa-principal-terreo",
