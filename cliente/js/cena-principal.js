@@ -52,6 +52,10 @@ export default class principal extends Phaser.Scene {
       frameWidth: 64,
       frameHeight: 64,
     });
+
+    /* Sons */
+    this.load.audio("metal-som", "./assets/metal.mp3");
+    this.load.audio("cristal-som", "./assets/cristal.mp3");
   }
 
   create() {
@@ -250,6 +254,10 @@ export default class principal extends Phaser.Scene {
       null,
       this
     );
+
+    /* Efeitos sonoros */
+    this.metal_som = this.sound.add("metal-som");
+    this.cristal_som = this.sound.add("cristal-som");
   }
 
   update() {}
@@ -259,12 +267,19 @@ export default class principal extends Phaser.Scene {
     this.cameras.main.shake(100, 0.01);
 
     /* Vibrar o celular pelos mesmos 100 ms */
-    window.navigator.vibrate([100]);
+    if (window.navigator.vibrate) {
+      window.navigator.vibrate([100]);
+    }
+
+    /* Tocar efeito sonoro */
+    this.metal_som.play();
   }
 
   coletar_cristal() {
-
     /* Ocultar e remover física/colisão */
     this.cristal.disableBody(true, true);
+
+    /* Tocar efeito sonoro */
+    this.cristal_som.play();
   }
 }
