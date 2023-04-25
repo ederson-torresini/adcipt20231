@@ -53,6 +53,11 @@ export default class principal extends Phaser.Scene {
       frameHeight: 64,
     });
 
+    this.load.spritesheet("tela-cheia", "./assets/tela-cheia.png", {
+      frameWidth: 64,
+      frameHeight: 64,
+    });
+
     /* Sons */
     this.load.audio("techno-trilha", "./assets/techno.mp3");
     this.load.audio("metal-som", "./assets/metal.mp3");
@@ -219,6 +224,20 @@ export default class principal extends Phaser.Scene {
         this.direita.setFrame(0);
         this.jogador_1.setVelocityX(0);
         this.jogador_1.anims.play("jogador-1-parado");
+      })
+      .setScrollFactor(0);
+
+    this.tela_cheia = this.add
+      .sprite(750, 50, "tela-cheia", 0)
+      .setInteractive()
+      .on("pointerdown", () => {
+        if (this.scale.isFullscreen) {
+          this.tela_cheia.setFrame(0);
+          this.scale.stopFullscreen();
+        } else {
+          this.tela_cheia.setFrame(1);
+          this.scale.startFullscreen();
+        }
       })
       .setScrollFactor(0);
 
