@@ -4,7 +4,7 @@ Para este semestre de 2023.1, a turma escolheu como tema de projeto o desenvolvi
 
 ## Premissa do jogo
 
-2 alunos estão, enfim, formando-se no ensino médio. Porém, no dia da formatura, eles encontram uma nave espacial enterrada embaixo do auditório, onde ocorrerá a colação de grau, com planos de sequestrar os alunos (todos, será?) para um exoplaneta em _Alpha Centauri_ - mais especificamente de _Alpha Centauri C_ (_Proxima Centauri_). Eles têm pouco tempo para descobrir quem é o alienígena infiltrado no evento! Será um professor? Ou mesmo um de seus colegas?
+Dois alunos estão, enfim, formando-se no ensino médio. Porém, no dia da formatura, eles encontram uma nave espacial enterrada embaixo do auditório, onde ocorrerá a colação de grau, com planos de sequestrar os alunos (todos, será?) para um exoplaneta em _Alpha Centauri_ - mais especificamente de _Alpha Centauri C_ (_Proxima Centauri_). Eles têm pouco tempo para descobrir quem é o alienígena infiltrado no evento! Será um professor? Ou mesmo um de seus colegas?
 
 ## Ideia geral do jogo (ideal)
 
@@ -46,6 +46,50 @@ O objetivo dos jogadores é, basicamente, identificar quem é o infiltrado na mu
 - Quem é o infiltrado;
 - Onde estão os objetos para coletar;
 - Disposição dos quebra-cabeças no tabuleiro.
+
+## Mensagens trocadas entre cliente(s) e servidor
+
+Para a funcionalidade multijogador (_multiplayer_), são usadas trocas de mensagens entre cliente(s) e servidor.
+
+### Estabelecimento de conexão
+
+O cliente estabelece conexão com o servidor.
+
+```mermaid
+sequenceDiagram
+    Cliente->>+Servidor: connection
+    Servidor->>-Cliente: connect
+```
+
+### Entrada em sala
+
+Antes de iniciar uma partida, o cliente escolhe uma sala para jogar. Como resposta, o servidor envia a lista de todos os jogadores presente nessa sala (incluindo o próprio cliente).
+
+```mermaid
+sequenceDiagram
+    Cliente->>+Servidor: entrar-na-sala
+    Servidor->>-Cliente: jogadores
+```
+
+### Atualização de estado de jogador remoto
+
+Como a partida tem pelo 2 - e apena 2 - jogadores, cada jogador envia regularmente o seu próprio estado para o servidor, que o encaminha para o outro jogador da partida. No fluxograma a seguir, é apresentada a atualização do jogador A para o jogador B.
+
+```mermaid
+sequenceDiagram
+    Cliente A->>+Servidor: estado-publicar
+    Servidor->>-Cliente B: estado-notificar
+```
+
+### Atualização de estado de uso de artefatos
+
+De forma equivalente ao caso anterior, toda ação sobre artefatos também é propagada de um cliente para outro, dado que a detecção de colisão é feita localmente (no navegador). No fluxograma a seguir, é apresentada a atualização do jogador A para o jogador B.
+
+```mermaid
+sequenceDiagram
+    Cliente A->>+Servidor: artefatos-publicar
+    Servidor->>-Cliente B: artefatos-notificar
+```
 
 ## Fluxogramas das cenas e quebra-cabeças
 
