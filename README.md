@@ -84,7 +84,7 @@ flowchart TD
   I[Ativar comando da porta]
   J[Encontrar a porta]
   K[Passar pela porta]
-  L[Ler documento]
+  L[Encontra artefato:\ndocumento]
   M{Acabou o\ntempo?}
   Z([Fim])
 
