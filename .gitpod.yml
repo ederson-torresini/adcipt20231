@@ -1,6 +1,7 @@
 tasks:
   - init: npm install --prefix servidor
     command: npm start --prefix servidor
+  - command: sh gerar-chave-privada.sh
 
 ports:
   - port: 3000
