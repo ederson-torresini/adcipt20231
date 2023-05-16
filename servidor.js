@@ -3,7 +3,8 @@ const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
 const PORT = process.env.PORT || 3000;
-const conn_limit = 100;
+const conn_limit = 1000;
+const room_limit = 10;
 
 io.on("connection", (socket) => {
   socket.on("registro", (id) => {
@@ -17,25 +18,14 @@ io.on("connection", (socket) => {
 
   socket.on("entrar-na-sala", (sala) => {
     socket.join(sala);
-
-    let jogadores = {};
-
-    if (io.sockets.adapter.rooms.get(sala).size === 1) {
-      jogadores = {
-        primeiro: socket.id,
-        segundo: undefined,
-      };
-    } else if (io.sockets.adapter.rooms.get(sala).size === 2) {
-      let [primeiro] = io.sockets.adapter.rooms.get(sala);
-
-      jogadores = {
-        primeiro: primeiro,
-        segundo: socket.id,
-      };
+    if (io.sockets.adapter.rooms.get(sala).size > room_limit) {
+      socket.leave(sala);
+    } else {
+      io.to(sala).emit(
+        "jogadores",
+        Array.from(io.sockets.adapter.rooms.get(sala))
+      );
     }
-    console.log("Sala %s: %s", sala, jogadores);
-
-    io.to(sala).emit("jogadores", jogadores);
   });
 
   socket.on("offer", (sala, description) => {
@@ -50,7 +40,18 @@ io.on("connection", (socket) => {
     socket.broadcast.to(sala).emit("candidate", signal);
   });
 
-  socket.on("disconnect", () => {});
+  socket.on("disconnecting", () => {
+    Array.from(socket.rooms)
+      .filter((sala) => sala !== socket.id)
+      .forEach((sala) => {
+        io.to(sala).emit(
+          "jogadores",
+          Array.from(io.sockets.adapter.rooms.get(sala)).filter(
+            (sid) => sid !== socket.id
+          )
+        );
+      });
+  });
 
   socket.on("estadoDoJogador", (sala, estado) => {
     socket.broadcast.to(sala).emit("desenharOutroJogador", estado);
