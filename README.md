@@ -435,3 +435,9 @@ Objetivo semana 9 :
 
 - Ajustes de movimentos (frames)
 - Ajustes dos itens gerais
+
+## Feira de Jogos 
+
+Estrutura da Feira
+
+Equipes e numeração
