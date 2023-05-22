@@ -36,8 +36,8 @@ io.on("connection", (socket) => {
     socket.broadcast.to(sala).emit("estado-notificar", estado);
   });
 
-  socket.on("arfetatos-publicar", (sala, artefatos) => {
-    socket.broadcast.to(sala).emit("arfetatos-notificar", artefatos);
+  socket.on("artefatos-publicar", (sala, artefatos) => {
+    socket.broadcast.to(sala).emit("artefatos-notificar", artefatos);
   });
 
   socket.on("disconnect", () => {});

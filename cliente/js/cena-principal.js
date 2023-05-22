@@ -276,7 +276,7 @@ export default class principal extends Phaser.Scene {
       this.jogador_2.y = y;
     });
 
-    this.game.socket.on("arfetatos-notificar", (artefatos) => {
+    this.game.socket.on("artefatos-notificar", (artefatos) => {
       if (artefatos.cristal) {
         this.cristal.disableBody(true, true);
       }
@@ -308,7 +308,7 @@ export default class principal extends Phaser.Scene {
   coletar_cristal() {
     this.cristal.disableBody(true, true);
     this.cristal_som.play();
-    this.game.socket.emit("arfetatos-publicar", this.game.sala, {
+    this.game.socket.emit("artefatos-publicar", this.game.sala, {
       cristal: true,
     });
   }
