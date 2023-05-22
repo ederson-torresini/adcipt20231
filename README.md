@@ -10,7 +10,7 @@ Dois alunos estão, enfim, formando-se no ensino médio. Porém, no dia da forma
 
 ## Ideia geral do jogo (ideal)
 
-Eu sempre gostei de ficção científica. Quando eu era mais novo, no caso bem mais novo (eu nasci em 1980), eu nem conhecia o gênero pelo seu nome. Mas de [Planeta dos Macacos](https://www.imdb.com/title/tt0062711/) a [Barbarella](https://www.imdb.com/title/tt0062711/), [Spectreman](https://www.imdb.com/title/tt0262177/) a [O Fantático Jaspion](https://www.imdb.com/title/tt0262177/) (eu assistia a tudo na TV aberta), havia algo de incrível naqueles mundos estranhos e distantes. Eu fui abduzido para esse universo, e lá permaneci desde então.
+Eu sempre gostei de ficção científica. Quando eu era mais novo, no caso bem mais novo (eu nasci em 1980), eu nem conhecia o gênero pelo seu nome. Mas de [Planeta dos Macacos](https://www.imdb.com/title/tt0062711/) a [Barbarella](https://www.imdb.com/title/tt0062711/), [Spectreman](https://www.imdb.com/title/tt0262177/) a [O Fantático Jaspion](https://www.imdb.com/title/tt0182616/) (eu assistia a tudo na TV aberta), havia algo de incrível naqueles mundos estranhos e distantes. Eu fui abduzido para esse universo, e lá permaneci desde então.
 
 O jogo aqui pensado é, na medida do possível, uma homenagem aos clássicos das revistinhas _pulp_, encontros insólitos entre bárbaros e macacos alienígenas, armas laser!, à fantasia absurda que entretém - e diverte. Sem _hard sci-fi_ dessa vez: o que interessa é o humor (ácido). Marte ataca!
 
