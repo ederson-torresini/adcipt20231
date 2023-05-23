@@ -9,11 +9,13 @@ class Game extends Phaser.Game {
   constructor() {
     super(config);
 
+    /* Estabelecimento de canal bidirecional via WebSocket e/ou polling */
     this.socket = io();
     this.socket.on("connect", () => {
       console.log("Conectado ao servidor para troca de mensagens.");
     });
 
+    /* Lista de servidor(es) ICE */
     this.ice_servers = {
       iceServers: [
         {
@@ -21,6 +23,8 @@ class Game extends Phaser.Game {
         },
       ],
     };
+
+    /* Associação de objeto HTML de áudio e objeto JS */
     this.audio = document.querySelector("audio");
 
     this.scene.add("abertura", abertura);

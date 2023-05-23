@@ -107,6 +107,7 @@ export default class sala extends Phaser.Scene {
         this.imagem.destroy();
         this.mensagem.setText("Aguardando segundo jogador...");
 
+        /* Captura de áudio */
         navigator.mediaDevices
           .getUserMedia({ video: false, audio: true })
           .then((stream) => {
