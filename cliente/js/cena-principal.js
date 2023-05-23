@@ -89,7 +89,91 @@ export default class principal extends Phaser.Scene {
       this.jogador_2 = this.add.sprite(300, 225, this.remoto);
       this.local = "robo-2";
       this.jogador_1 = this.physics.add.sprite(600, 225, this.local);
+
+      navigator.mediaDevices
+        .getUserMedia({ video: false, audio: true })
+        .then((stream) => {
+          console.log(stream);
+
+          this.game.localConnection = new RTCPeerConnection(
+            this.game.ice_servers
+          );
+
+          stream
+            .getTracks()
+            .forEach((track) =>
+              this.game.localConnection.addTrack(track, stream)
+            );
+
+          this.game.localConnection.onicecandidate = ({ candidate }) => {
+            candidate &&
+              this.game.socket.emit("candidate", this.game.sala, candidate);
+          };
+
+          this.game.localConnection.ontrack = ({ streams: [stream] }) => {
+            this.game.audio.srcObject = stream;
+          };
+
+          this.game.localConnection
+            .createOffer()
+            .then((offer) =>
+              this.game.localConnection.setLocalDescription(offer)
+            )
+            .then(() => {
+              this.game.socket.emit(
+                "offer",
+                this.game.sala,
+                this.game.localConnection.localDescription
+              );
+            });
+
+          this.game.midias = stream;
+        })
+        .catch((error) => console.log(error));
     }
+
+    this.game.socket.on("offer", (description) => {
+      this.game.remoteConnection = new RTCPeerConnection(this.ice_servers);
+
+      this.game.midias
+        .getTracks()
+        .forEach((track) =>
+          this.game.remoteConnection.addTrack(track, this.game.midias)
+        );
+
+      this.game.remoteConnection.onicecandidate = ({ candidate }) => {
+        candidate &&
+          this.game.socket.emit("candidate", this.game.sala, candidate);
+      };
+
+      let midias = this.game.midias;
+      this.game.remoteConnection.ontrack = ({ streams: [midias] }) => {
+        this.game.audio.srcObject = this.game.midias;
+      };
+
+      this.game.remoteConnection
+        .setRemoteDescription(description)
+        .then(() => this.game.remoteConnection.createAnswer())
+        .then((answer) =>
+          this.game.remoteConnection.setLocalDescription(answer)
+        )
+        .then(() => {
+          this.game.socket.emit(
+            "answer",
+            this.game.sala,
+            this.game.remoteConnection.localDescription
+          );
+        });
+    });
+
+    this.game.socket.on("answer", (description) => {
+      this.game.localConnection.setRemoteDescription(description);
+    });
+
+    this.game.socket.on("candidate", (candidate) => {
+      let conn = this.game.localConnection || this.game.remoteConnection;
+      conn.addIceCandidate(new RTCIceCandidate(candidate));
+    });
 
     this.anims.create({
       key: "jogador-parado",
