@@ -28,8 +28,8 @@ io.on("connection", (socket) => {
     }
   });
 
-  socket.on("offer", (sala, description) => {
-    socket.broadcast.to(sala).emit("offer", socket.id, description);
+  socket.on("offer", (from, to, description) => {
+    io.to(to).emit("offer", from, to, description);
   });
 
   socket.on("answer", (sala, description) => {

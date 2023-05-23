@@ -16,7 +16,9 @@ export default class presenca extends Phaser.Scene {
 
     this.jogadores = this.game.jogadores.forEach((jogador, indice) => {
       if (jogador === this.game.socket.id) {
-        this.add.text(50, 50 + indice * 50, jogador + "*");
+        this.add.text(50, 50 + indice * 50, jogador + " (você)", {
+          fill: "#aaaaaa",
+        });
       } else {
         this.add
           .text(50, 50 + indice * 50, jogador)
@@ -46,6 +48,7 @@ export default class presenca extends Phaser.Scene {
               .then(() => {
                 this.game.socket.emit(
                   "offer",
+                  this.game.socket.id,
                   jogador,
                   this.localConnection.localDescription
                 );
@@ -54,7 +57,7 @@ export default class presenca extends Phaser.Scene {
       }
     });
 
-    this.game.socket.on("offer", (socketId, description) => {
+    this.game.socket.on("offer", (from, to, description) => {
       this.remoteConnection = new RTCPeerConnection(this.ice_servers);
 
       this.game.midias
@@ -64,7 +67,7 @@ export default class presenca extends Phaser.Scene {
         );
 
       this.remoteConnection.onicecandidate = ({ candidate }) => {
-        candidate && this.game.socket.emit("candidate", socketId, candidate);
+        candidate && this.game.socket.emit("candidate", to, from, candidate);
       };
 
       let midias = this.game.midias;
@@ -79,17 +82,18 @@ export default class presenca extends Phaser.Scene {
         .then(() => {
           this.game.socket.emit(
             "answer",
-            socketId,
+            to,
+            from,
             this.remoteConnection.localDescription
           );
         });
     });
 
-    this.game.socket.on("answer", (description) => {
+    this.game.socket.on("answer", (from, to, description) => {
       this.localConnection.setRemoteDescription(description);
     });
 
-    this.game.socket.on("candidate", (candidate) => {
+    this.game.socket.on("candidate", (from, to, candidate) => {
       let conn = this.localConnection || this.remoteConnection;
       conn.addIceCandidate(new RTCIceCandidate(candidate));
     });
