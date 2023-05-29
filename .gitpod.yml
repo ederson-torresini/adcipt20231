@@ -1,6 +1,9 @@
 tasks:
-  - init: npm install --prefix servidor
+  - name: instalar dependências
+    init: npm install --prefix servidor
     command: npm start --prefix servidor
+  - name: gerar chave privada
+    command: sh gerar-chave-privada.sh
 
 ports:
   - port: 3000
