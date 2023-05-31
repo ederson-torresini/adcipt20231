@@ -320,19 +320,19 @@ Para o desenvolvimento de jogo Web em geral:
 
 Projeto modelo: [adcipt20231](https://github.com/users/boidacarapreta/projects/4).
 
-| Equipe                                                 | Jogo                                                                                          | Projeto                                                                                         | Entrega 1 | Entrega 2 | Entrega 3 | Entrega 4 |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | --------- | --------- | --------- | --------- |
-| [silentiummm](https://github.com/silentiummm)          | [Cattus](https://github.com/silentiummm/Cattus)                                               | [Cattus](https://github.com/orgs/silentiummm/projects/1)                                        | 6         | 6         | 6         |           |
-| [lotus gamess](https://github.com/lotus-gamess)        | [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas)    | [Em busca das flores magicas](https://github.com/orgs/lotus-gamess/projects/2)                  | 6         | 6         | 0         |           |
-| [ifgamessc](https://github.com/ifgamessc)              | [Folclore](https://github.com/ifgamessc/Folclore)                                             | [Kanban](https://github.com/orgs/ifgamessc/projects/1)                                          | 6         | 6         | 6         |           |
-| [Lorum-Gaming](https://github.com/Lorum-Gaming)        | [God Between Us](https://github.com/Lorum-Gaming/God-Between-Us)                              | [Gods between Us](https://github.com/orgs/Lorum-Gaming/projects/1/views/1)                      | 8         | 6         | 0         |           |
-| [Hope-Games](https://github.com/Hope-Games)            | [Maze of the past](https://github.com/Hope-Games/Maze-of-the-past-)                           | [Kanban](https://github.com/orgs/Hope-Games/projects/1)                                         | 6         | 6         | 6         |           |
-| [ja-on1](https://github.com/ja-on1)                    | [João & Maria: The order of warder](https://github.com/ja-on1/Joao-Maria-The-order-of-warder) | [Kanban](https://github.com/orgs/ja-on1/projects/1)                                             | 6         | 6         | 6         |           |
-| [Dinamic Creative](https://github.com/DinamicCreative) | [O mistério da meia noite](https://github.com/DinamicCreative/EscapeRoom)                     | [Projeção de Tarefas](https://github.com/orgs/DinamicCreative/projects/1)                       | 6         | 6         | 0         |           |
-| [BIGUA GAMES](https://github.com/BIGUA-GAMES)          | [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)                               | [Notte Eterna Z](https://github.com/orgs/BIGUA-GAMES/projects/1)                                | 6         | 6         | 6         |           |
-| [leandrofars](https://github.com/leandrofars)          | [Oktopus](https://github.com/leandrofars/oktopus)                                             | [Open Source TR369 Controller](https://github.com/users/leandrofars/projects/1)                 | 6         |           |           |           |
-| [Saga-games](https://github.com/Saga-games)            | [Trivert](https://github.com/Saga-games/Trivert)                                              | [Trivert](https://github.com/orgs/Saga-games/projects/1)                                        | 6         | 6         | 0         |           |
-| [Higor](https://github.com/Higorass)                   | [Don't look](https://github.com/Higorass/Don-t-look/tree/main)                                | [Projeto](https://github.com/users/Higorass/projects/1)                                         | 6         | 0         | 0         |           |
+| Equipe                                                 | Jogo                                                                                          | Projeto                                                                         | Entrega 1 | Entrega 2 | Entrega 3 | Entrega 4 | Entrega 5 | Entrega 6 |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| [silentiummm](https://github.com/silentiummm)          | [Cattus](https://github.com/silentiummm/Cattus)                                               | [Cattus](https://github.com/orgs/silentiummm/projects/1)                        | 6         | 6         | 6         | 6         | 6         | 6         |
+| [lotus gamess](https://github.com/lotus-gamess)        | [Em busca das flores mágicas](https://github.com/lotus-gamess/Em-busca-das-flores-magicas)    | [Em busca das flores magicas](https://github.com/orgs/lotus-gamess/projects/2)  | 6         | 6         | 6         | 6         | 6         | 6         |
+| [ifgamessc](https://github.com/ifgamessc)              | [Folclore](https://github.com/ifgamessc/Folclore)                                             | [Kanban](https://github.com/orgs/ifgamessc/projects/1)                          | 6         | 6         | 6         | 6         | 6         | 6         |
+| [Lorum-Gaming](https://github.com/Lorum-Gaming)        | [God Between Us](https://github.com/Lorum-Gaming/God-Between-Us)                              | [Gods between Us](https://github.com/orgs/Lorum-Gaming/projects/1/views/1)      | 8         | 6         | 6         | 6         | 0         | 0         |
+| [Hope-Games](https://github.com/Hope-Games)            | [Maze of the past](https://github.com/Hope-Games/Maze-of-the-past-)                           | [Kanban](https://github.com/orgs/Hope-Games/projects/1)                         | 6         | 6         | 6         | 6         | 6         | 6         |
+| [ja-on1](https://github.com/ja-on1)                    | [João & Maria: The order of warder](https://github.com/ja-on1/Joao-Maria-The-order-of-warder) | [Kanban](https://github.com/orgs/ja-on1/projects/1)                             | 6         | 6         | 6         | 6         | 6         | 0         |
+| [Dinamic Creative](https://github.com/DinamicCreative) | [O mistério da meia noite](https://github.com/DinamicCreative/EscapeRoom)                     | [Projeção de Tarefas](https://github.com/orgs/DinamicCreative/projects/1)       | 6         | 6         | 6         | 0         | 6         | 6         |
+| [BIGUA GAMES](https://github.com/BIGUA-GAMES)          | [Notte Eterna Z](https://github.com/BIGUA-GAMES/Notte-Eterna-Z)                               | [Notte Eterna Z](https://github.com/orgs/BIGUA-GAMES/projects/1)                | 6         | 6         | 6         | 0         | 6         | 0         |
+| [leandrofars](https://github.com/leandrofars)          | [Oktopus](https://github.com/leandrofars/oktopus)                                             | [Open Source TR369 Controller](https://github.com/users/leandrofars/projects/1) | 6         | 6         | 6         | 0         | 0         | 0         |
+| [Saga-games](https://github.com/Saga-games)            | [Trivert](https://github.com/Saga-games/Trivert)                                              | [Trivert](https://github.com/orgs/Saga-games/projects/1)                        | 6         | 6         | 0         | 0         | 0         | 0         |
+| [Higor](https://github.com/Higorass)                   | [Don't look](https://github.com/Higorass/Don-t-look/tree/main)                                | [Projeto](https://github.com/users/Higorass/projects/1)                         | 6         | 0         | 0         | 0         | 0         | 0         |
 
 ## Designer dos Jogos
 
@@ -358,9 +358,9 @@ Dados para informação:
 - [Pesquisas de sprites e geral](https://br.pinterest.com/)
 - [Editores Gerais 1 ](https://picsart.com/pt)
 - [Editores Gerais 2 ](https://www.canva.com/pt_br/)
-- [Para construção Simples](https://www.piskelapp.com/) *online
-- [Para construção intermediária](https://steamunlocked.net/aseprite-free-download/) *instala
-- [Para construção Avançada](https://krita.org/en/) *instala
+- [Para construção Simples](https://www.piskelapp.com/) \*online
+- [Para construção intermediária](https://steamunlocked.net/aseprite-free-download/) \*instala
+- [Para construção Avançada](https://krita.org/en/) \*instala
 - [Para músicas de fundo](https://www.salamisound.com/pt/jogo-sounds)
 
 ## Tutoriais
@@ -371,9 +371,9 @@ Dados para informação:
 - [Detalhes da construção](https://www.youtube.com/watch?v=6Vu5tylaw10)
 - [Escala do personagem e cenário](https://www.youtube.com/watch?v=Gwrpw1YtuGo)
 - [Construção dos cenários mais complexos](https://www.youtube.com/watch?v=tFApGVTFlLk)
-- [Sobre movimentação dos personagens, para movimentos especificos](https://www.youtube.com/watch?v=UH_jFOa4t6Q) 
-- [Sobre movimentação](https://www.youtube.com/watch?v=M-ozjTe8TyM) 
-- [COnstrução aseprite](https://www.youtube.com/watch?v=iWvfaiiVuDI&t=10s) 
+- [Sobre movimentação dos personagens, para movimentos especificos](https://www.youtube.com/watch?v=UH_jFOa4t6Q)
+- [Sobre movimentação](https://www.youtube.com/watch?v=M-ozjTe8TyM)
+- [COnstrução aseprite](https://www.youtube.com/watch?v=iWvfaiiVuDI&t=10s)
 
 ## Arquivos e Repositórios
 
@@ -436,7 +436,7 @@ Objetivo semana 9 :
 - Ajustes de movimentos (frames)
 - Ajustes dos itens gerais
 
-## Feira de Jogos 
+## Feira de Jogos
 
 Estrutura da Feira
 
