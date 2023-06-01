@@ -9,23 +9,35 @@ class Game extends Phaser.Game {
   constructor() {
     super(config);
 
-    /* Estabelecimento de canal bidirecional via WebSocket e/ou polling */
-    this.socket = io();
-    this.socket.on("connect", () => {
-      console.log("Conectado ao servidor para troca de mensagens.");
-    });
+    let iceServers;
+    if (window.location.host === "ifsc.digital") {
+      this.socket = io.connect({ path: "/adcipt20231/socket.io/" });
 
-    /* Lista de servidor(es) ICE */
-    this.ice_servers = {
-      iceServers: [
+      iceServers = [
+        {
+          urls: "stun:ifsc.digital",
+        },
+        {
+          urls: "turns:ifsc.digital",
+          username: "adcipt",
+          credential: "adcipt20231",
+        },
+      ];
+    } else {
+      this.socket = io();
+
+      iceServers = [
         {
           urls: "stun:stun.l.google.com:19302",
         },
-      ],
-    };
-
-    /* Associação de objeto HTML de áudio e objeto JS */
+      ];
+    }
+    this.ice_servers = { iceServers };
     this.audio = document.querySelector("audio");
+
+    this.socket.on("connect", () => {
+      console.log("Conectado ao servidor para troca de mensagens.");
+    });
 
     this.scene.add("abertura", abertura);
     this.scene.add("sala", sala);
