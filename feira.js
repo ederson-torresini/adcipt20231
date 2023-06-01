@@ -2,20 +2,21 @@ export default class feira extends Phaser.Scene {
   constructor() {
     super("feira");
 
+    this.escolha = undefined;
     this.jogos = [
       {
-        //   indice: "gravity-falls-game",
-        //   url: "https://gravityfallsgame.ifsc.cloud/",
-        //   logo: {
-        //     nome: "logo-gravity-falls-game",
-        //     arquivo: "./assets/logo/gravity-falls-game.png",
-        //     x: 135,
-        //     y: 250,
-        //   },
-        //   qrcode: {
-        //     nome: "qrcode-gravity-falls-game",
-        //     arquivo: "./assets/qrcode/gravity-falls-game.png",
-        //   },
+        indice: "adcipt20231",
+        url: "https://ifsc.digital/adcipt20231/",
+        logo: {
+          nome: "logo-adcipt20231",
+          arquivo: "./assets/logo-adcipt20231.png",
+          x: 135,
+          y: 250,
+        },
+        qrcode: {
+          nome: "qrcode-adcipt20231",
+          arquivo: "./assets/qrcode-adcipt20231.png",
+        },
       },
       // {
       //   indice: "killer-run",
@@ -90,80 +91,82 @@ export default class feira extends Phaser.Scene {
     this.load.image("fechar", "./assets/fechar.png");
   }
 
-  create() {}
+  create() {
+    this.jogos.forEach((jogo) => {
+      jogo.logo.objeto = this.add
+        .image(jogo.logo.x, jogo.logo.y, jogo.logo.nome)
+        .setInteractive();
+
+      jogo.qrcode.objeto = this.add
+        .image(
+          this.game.config.width / 2,
+          this.game.config.height / 2 + 25,
+          jogo.qrcode.nome
+        )
+        .setVisible(false);
+
+      jogo.logo.objeto.on("pointerdown", () => {
+        if (!this.escolha) {
+          this.escolha = jogo.url;
+          this.fechar.setVisible(true);
+          this.jogar.setVisible(true);
+
+          this.jogos.forEach((jogo) => {
+            jogo.logo.objeto.setVisible(false);
+            jogo.qrcode.objeto.setVisible(false);
+          });
+
+          jogo.logo.objeto.setVisible(true);
+          jogo.logo.objeto.x = this.game.config.width / 2;
+          jogo.logo.objeto.y = this.game.config.height / 2 - 256;
+          jogo.qrcode.objeto.setVisible(true);
+        }
+      });
+    });
+
+    this.fechar = this.add
+      .image(this.game.config.width - 64, 64, "fechar")
+      .setInteractive()
+      .setVisible(false);
+
+    this.fechar.on("pointerdown", () => {
+      this.escolha = undefined;
+
+      this.jogos.forEach((jogo) => {
+        jogo.logo.objeto.setVisible(true);
+        jogo.qrcode.objeto.setVisible(false);
+        jogo.logo.objeto.x = jogo.logo.x;
+        jogo.logo.objeto.y = jogo.logo.y;
+      });
+
+      this.fechar.setVisible(false);
+      this.jogar.setVisible(false);
+    });
+
+    this.anims.create({
+      key: "jogar-animado",
+      frames: this.anims.generateFrameNumbers("jogar", {
+        start: 0,
+        end: 6,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    });
+
+    this.jogar = this.add
+      .sprite(
+        this.game.config.width / 2,
+        this.game.config.height / 2 + 300,
+        "jogar",
+        0
+      )
+      .setInteractive()
+      .setVisible(false)
+      .anims.play("jogar-animado", true)
+      .on("pointerdown", () => {
+        window.open(this.escolha, "_blank");
+      });
+  }
 
   update() {}
 }
-
-// function create() {
-//   escolha = undefined;
-
-// this.anims.create({
-//   key: "jogar-animado",
-//   frames: this.anims.generateFrameNumbers("jogar", {
-//     start: 0,
-//     end: 6,
-//   }),
-//   frameRate: 10,
-//   repeat: -1,
-// });
-
-//   jogar = this.add
-//     .sprite(config.width / 2, config.height / 2 + 300, "jogar", 0)
-//     .setInteractive()
-//     .setVisible(false);
-//   jogar.anims.play("jogar-animado", true);
-
-//   jogar.on("pointerdown", () => {
-//     window.open(escolha, "_blank");
-//   });
-
-//   fechar = this.add
-//     .image(config.width - 64, 64, "fechar")
-//     .setInteractive()
-//     .setVisible(false);
-
-//   fechar.on("pointerdown", () => {
-//     escolha = undefined;
-
-//     jogos.forEach((jogo) => {
-//       jogo.logo.objeto.setVisible(true);
-//       jogo.qrcode.objeto.setVisible(false);
-//       jogo.logo.objeto.x = jogo.logo.x;
-//       jogo.logo.objeto.y = jogo.logo.y;
-//     });
-
-//     fechar.setVisible(false);
-//     jogar.setVisible(false);
-//   });
-
-//   jogos.forEach((jogo) => {
-//     jogo.logo.objeto = this.add
-//       .image(jogo.logo.x, jogo.logo.y, jogo.logo.nome)
-//       .setInteractive();
-
-//     jogo.qrcode.objeto = this.add
-//       .image(config.width / 2, config.height / 2 + 25, jogo.qrcode.nome)
-//       .setVisible(false);
-
-//     jogo.logo.objeto.on("pointerdown", () => {
-//       if (!escolha) {
-//         escolha = jogo.url;
-//         fechar.setVisible(true);
-//         jogar.setVisible(true);
-
-//         jogos.forEach((jogo) => {
-//           jogo.logo.objeto.setVisible(false);
-//           jogo.qrcode.objeto.setVisible(false);
-//         });
-
-//         jogo.logo.objeto.setVisible(true);
-//         jogo.logo.objeto.x = config.width / 2;
-//         jogo.logo.objeto.y = config.height / 2 - 256;
-//         jogo.qrcode.objeto.setVisible(true);
-//       }
-//     });
-//   });
-// }
-
-// function update() {}
