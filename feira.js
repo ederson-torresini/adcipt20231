@@ -89,13 +89,44 @@ export default class feira extends Phaser.Scene {
     });
 
     this.load.image("fechar", "./assets/fechar.png");
+
+    this.load.audio("caixinha-de-musica", "./assets/caixinha-de-musica.mp3");
+    this.load.audio("pop", "./assets/pop.mp3");
   }
 
   create() {
+    this.cameras.main.fadeIn(1000);
+
+    this.caixinha_de_musica = this.sound.add("caixinha-de-musica");
+    this.pop = this.sound.add("pop");
+
     this.jogos.forEach((jogo) => {
       jogo.logo.objeto = this.add
         .image(jogo.logo.x, jogo.logo.y, jogo.logo.nome)
-        .setInteractive();
+        .setInteractive()
+        .on("pointerdown", () => {
+          if (!this.escolha) {
+            this.caixinha_de_musica.play();
+            this.cameras.main.fadeOut(250);
+            this.cameras.main.once("camerafadeoutcomplete", (camera) => {
+              camera.fadeIn(250);
+
+              this.escolha = jogo.url;
+              this.fechar.setVisible(true);
+              this.jogar.setVisible(true);
+
+              this.jogos.forEach((jogo) => {
+                jogo.logo.objeto.setVisible(false);
+                jogo.qrcode.objeto.setVisible(false);
+              });
+
+              jogo.logo.objeto.setVisible(true);
+              jogo.logo.objeto.x = this.game.config.width / 2;
+              jogo.logo.objeto.y = this.game.config.height / 2 - 256;
+              jogo.qrcode.objeto.setVisible(true);
+            });
+          }
+        });
 
       jogo.qrcode.objeto = this.add
         .image(
@@ -104,44 +135,34 @@ export default class feira extends Phaser.Scene {
           jogo.qrcode.nome
         )
         .setVisible(false);
-
-      jogo.logo.objeto.on("pointerdown", () => {
-        if (!this.escolha) {
-          this.escolha = jogo.url;
-          this.fechar.setVisible(true);
-          this.jogar.setVisible(true);
-
-          this.jogos.forEach((jogo) => {
-            jogo.logo.objeto.setVisible(false);
-            jogo.qrcode.objeto.setVisible(false);
-          });
-
-          jogo.logo.objeto.setVisible(true);
-          jogo.logo.objeto.x = this.game.config.width / 2;
-          jogo.logo.objeto.y = this.game.config.height / 2 - 256;
-          jogo.qrcode.objeto.setVisible(true);
-        }
-      });
     });
 
     this.fechar = this.add
       .image(this.game.config.width - 64, 64, "fechar")
       .setInteractive()
-      .setVisible(false);
+      .setVisible(false)
+      .on("pointerdown", () => {
+        if (this.caixinha_de_musica.isPlaying) {
+          this.caixinha_de_musica.stop();
+        }
+        this.pop.play();
+        this.cameras.main.fadeOut(250);
+        this.cameras.main.once("camerafadeoutcomplete", (camera) => {
+          camera.fadeIn(250);
 
-    this.fechar.on("pointerdown", () => {
-      this.escolha = undefined;
+          this.escolha = undefined;
 
-      this.jogos.forEach((jogo) => {
-        jogo.logo.objeto.setVisible(true);
-        jogo.qrcode.objeto.setVisible(false);
-        jogo.logo.objeto.x = jogo.logo.x;
-        jogo.logo.objeto.y = jogo.logo.y;
+          this.jogos.forEach((jogo) => {
+            jogo.logo.objeto.setVisible(true);
+            jogo.qrcode.objeto.setVisible(false);
+            jogo.logo.objeto.x = jogo.logo.x;
+            jogo.logo.objeto.y = jogo.logo.y;
+          });
+
+          this.fechar.setVisible(false);
+          this.jogar.setVisible(false);
+        });
       });
-
-      this.fechar.setVisible(false);
-      this.jogar.setVisible(false);
-    });
 
     this.anims.create({
       key: "jogar-animado",
