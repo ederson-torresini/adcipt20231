@@ -5,47 +5,33 @@ export default class feira extends Phaser.Scene {
     this.escolha = undefined;
     this.jogos = [
       {
-        indice: "adcipt20231",
-        url: "https://ifsc.digital/adcipt20231/",
+        indice: "maze-of-the-past",
+        url: "https://ifsc.digital/Maze-of-the-past-/",
         logo: {
-          nome: "logo-adcipt20231",
-          arquivo: "./assets/logo-adcipt20231.png",
+          nome: "logo-maze-of-the-past",
+          arquivo: "./assets/logo-maze-of-the-past.png",
           x: 135,
           y: 250,
         },
         qrcode: {
-          nome: "qrcode-adcipt20231",
-          arquivo: "./assets/qrcode-adcipt20231.png",
+          nome: "qrcode-maze-of-the-past",
+          arquivo: "./assets/qrcode-maze-of-the-past.png",
         },
       },
-      // {
-      //   indice: "killer-run",
-      //   url: "https://killerrun.ifsc.cloud/",
-      //   logo: {
-      //     nome: "logo-killer-run",
-      //     arquivo: "./assets/logo/killer-run.png",
-      //     x: 405,
-      //     y: 250,
-      //   },
-      //   qrcode: {
-      //     nome: "qrcode-killer-run",
-      //     arquivo: "./assets/qrcode/killer-run.png",
-      //   },
-      // },
-      // {
-      //   indice: "princesa-perdidas",
-      //   url: "https://princesasperdidas.ifsc.cloud/",
-      //   logo: {
-      //     nome: "logo-princesas-perdidas",
-      //     arquivo: "./assets/logo/princesas-perdidas.png",
-      //     x: 135,
-      //     y: 450,
-      //   },
-      //   qrcode: {
-      //     nome: "qrcode-princesas-perdidas",
-      //     arquivo: "./assets/qrcode/princesas-perdidas.png",
-      //   },
-      // },
+      {
+        indice: "triver",
+        url: "https://ifsc.digital/Trivert/",
+        logo: {
+          nome: "logo-trivert",
+          arquivo: "./assets/logo-trivert.png",
+          x: 350,
+          y: 250,
+        },
+        qrcode: {
+          nome: "qrcode-trivert",
+          arquivo: "./assets/qrcode-trivert.png",
+        },
+      },
       // {
       //   indice: "soccer-simulator",
       //   url: "https://soccersimulator.ifsc.cloud/",
