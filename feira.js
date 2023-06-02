@@ -24,7 +24,7 @@ export default class feira extends Phaser.Scene {
         logo: {
           nome: "logo-trivert",
           arquivo: "./assets/logo-trivert.png",
-          x: 350,
+          x: 375,
           y: 250,
         },
         qrcode: {
@@ -32,20 +32,20 @@ export default class feira extends Phaser.Scene {
           arquivo: "./assets/qrcode-trivert.png",
         },
       },
-      // {
-      //   indice: "soccer-simulator",
-      //   url: "https://soccersimulator.ifsc.cloud/",
-      //   logo: {
-      //     nome: "logo-soccer-simulator",
-      //     arquivo: "./assets/logo/soccer-simulator.png",
-      //     x: 405,
-      //     y: 450,
-      //   },
-      //   qrcode: {
-      //     nome: "qrcode-soccer-simulator",
-      //     arquivo: "./assets/qrcode/soccer-simulator.png",
-      //   },
-      // },
+      {
+        indice: "escape-room",
+        url: "https://ifsc.digital/EscapeRoom/",
+        logo: {
+          nome: "logo-escape-room",
+          arquivo: "./assets/logo-escape-room.png",
+          x: 400,
+          y: 450,
+        },
+        qrcode: {
+          nome: "qrcode-escape-room",
+          arquivo: "./assets/qrcode-escape-room.png",
+        },
+      },
       // {
       //   indice: "mage-knight",
       //   url: "https://mageknight.ifsc.cloud/",
