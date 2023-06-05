@@ -9,11 +9,11 @@ export default class feira extends Phaser.Scene {
         url: "https://ifsc.digital/Maze-of-the-past-/",
         logo: {
           nome: "logo-maze-of-the-past",
-          arquivo: "./assets/logo-maze-of-the-past.png",
+          arquivo: "./assets/logos/maze-of-the-past.png",
         },
         qrcode: {
           nome: "qrcode-maze-of-the-past",
-          arquivo: "./assets/qrcode-maze-of-the-past.png",
+          arquivo: "./assets/qrcodes/maze-of-the-past.png",
         },
       },
       {
@@ -21,11 +21,11 @@ export default class feira extends Phaser.Scene {
         url: "https://ifsc.digital/Trivert/",
         logo: {
           nome: "logo-trivert",
-          arquivo: "./assets/logo-trivert.png",
+          arquivo: "./assets/logos/trivert.png",
         },
         qrcode: {
           nome: "qrcode-trivert",
-          arquivo: "./assets/qrcode-trivert.png",
+          arquivo: "./assets/qrcodes/trivert.png",
         },
       },
       {
@@ -33,11 +33,11 @@ export default class feira extends Phaser.Scene {
         url: "https://ifsc.digital/EscapeRoom/",
         logo: {
           nome: "logo-escape-room",
-          arquivo: "./assets/logo-escape-room.png",
+          arquivo: "./assets/logos/escape-room.png",
         },
         qrcode: {
           nome: "qrcode-escape-room",
-          arquivo: "./assets/qrcode-escape-room.png",
+          arquivo: "./assets/qrcodes/escape-room.png",
         },
       },
       {
@@ -45,11 +45,11 @@ export default class feira extends Phaser.Scene {
         url: "https://ifsc.digital/Joao-Maria-The-order-of-warder/",
         logo: {
           nome: "logo-joao-maria",
-          arquivo: "./assets/logo-joao-maria.png",
+          arquivo: "./assets/logos/joao-maria.png",
         },
         qrcode: {
           nome: "qrcode-joao-maria",
-          arquivo: "./assets/qrcode-joao-maria.png",
+          arquivo: "./assets/qrcodes/joao-maria.png",
         },
       },
     ];
@@ -74,7 +74,7 @@ export default class feira extends Phaser.Scene {
       frameHeight: 128,
     });
 
-    this.load.audio("trilha", "./assets/trilha.mp3");
+    this.load.audio("trilha", "./assets/sons/trilha.mp3");
   }
 
   create() {
