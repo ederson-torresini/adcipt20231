@@ -56,6 +56,11 @@ export default class feira extends Phaser.Scene {
   }
 
   preload() {
+    this.load.image("fundo", "./assets/fundo.png");
+    this.load.spritesheet("botao-casa", "./assets/botao-casa.png", {
+      frameWidth: 128,
+      frameHeight: 128,
+    });
     this.jogos.forEach((jogo) => {
       this.load.image(jogo.logo.nome, jogo.logo.arquivo);
       this.load.image(jogo.qrcode.nome, jogo.qrcode.arquivo);
@@ -65,15 +70,6 @@ export default class feira extends Phaser.Scene {
       frameWidth: 402,
       frameHeight: 65,
     });
-    this.load.spritesheet("parque", "./assets/parque.png", {
-      frameWidth: 960,
-      frameHeight: 540,
-    });
-    this.load.spritesheet("botao-casa", "./assets/botao-casa.png", {
-      frameWidth: 128,
-      frameHeight: 128,
-    });
-
     this.load.audio("trilha", "./assets/sons/trilha.mp3");
   }
 
@@ -175,18 +171,6 @@ export default class feira extends Phaser.Scene {
       });
 
     this.anims.create({
-      key: "parque-animado",
-      frames: this.anims.generateFrameNumbers("parque", {
-        start: 0,
-        end: 10,
-      }),
-      frameRate: 10,
-      repeat: -1,
-    });
-
-    this.parque = this.add.sprite(480, 270, "parque").play("parque-animado");
-
-    this.anims.create({
       key: "botao-casa",
       frames: this.anims.generateFrameNumbers("botao-casa", {
         start: 0,
@@ -196,15 +180,24 @@ export default class feira extends Phaser.Scene {
       repeat: -1,
     });
 
+    this.fundo = this.add.image(
+      this.game.config.width / 2,
+      this.game.config.height / 2,
+      "fundo"
+    );
     this.botao_casa = this.add
-      .sprite(this.game.config.width * 0.5, this.game.config.height * 0.8, "botao-casa")
+      .sprite(
+        this.game.config.width * 0.5,
+        this.game.config.height * 0.8,
+        "botao-casa"
+      )
       .play("botao-casa")
       .setInteractive()
       .on("pointerdown", () => {
         this.cameras.main.fadeOut(250);
         this.cameras.main.once("camerafadeoutcomplete", (camera) => {
           this.botao_casa.destroy();
-          this.parque.destroy();
+          this.fundo.destroy();
           camera.fadeIn(250);
         });
       });
