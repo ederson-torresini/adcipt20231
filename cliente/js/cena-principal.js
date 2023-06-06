@@ -98,12 +98,6 @@ export default class principal extends Phaser.Scene {
             this.game.ice_servers
           );
 
-          stream
-            .getTracks()
-            .forEach((track) =>
-              this.game.localConnection.addTrack(track, stream)
-            );
-
           this.game.localConnection.onicecandidate = ({ candidate }) => {
             candidate &&
               this.game.socket.emit("candidate", this.game.sala, candidate);
@@ -112,6 +106,12 @@ export default class principal extends Phaser.Scene {
           this.game.localConnection.ontrack = ({ streams: [stream] }) => {
             this.game.audio.srcObject = stream;
           };
+
+          stream
+            .getTracks()
+            .forEach((track) =>
+              this.game.localConnection.addTrack(track, stream)
+            );
 
           this.game.localConnection
             .createOffer()
@@ -134,12 +134,6 @@ export default class principal extends Phaser.Scene {
     this.game.socket.on("offer", (description) => {
       this.game.remoteConnection = new RTCPeerConnection(this.game.ice_servers);
 
-      this.game.midias
-        .getTracks()
-        .forEach((track) =>
-          this.game.remoteConnection.addTrack(track, this.game.midias)
-        );
-
       this.game.remoteConnection.onicecandidate = ({ candidate }) => {
         candidate &&
           this.game.socket.emit("candidate", this.game.sala, candidate);
@@ -148,6 +142,12 @@ export default class principal extends Phaser.Scene {
       this.game.remoteConnection.ontrack = ({ streams: [midia] }) => {
         this.game.audio.srcObject = midia;
       };
+
+      this.game.midias
+        .getTracks()
+        .forEach((track) =>
+          this.game.remoteConnection.addTrack(track, this.game.midias)
+        );
 
       this.game.remoteConnection
         .setRemoteDescription(description)
