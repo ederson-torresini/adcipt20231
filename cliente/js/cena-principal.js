@@ -156,7 +156,9 @@ export default class principal extends Phaser.Scene {
       };
 
       /* Associação com o objeto HTML de áudio */
+      let midias = this.game.midias;
       this.game.remoteConnection.ontrack = ({ streams: [midias] }) => {
+        console.log(midias);
         this.game.audio.srcObject = midias;
       };
 
