@@ -140,7 +140,7 @@ export default class principal extends Phaser.Scene {
 
     /* Recebimento de oferta de mídia */
     this.game.socket.on("offer", (description) => {
-      this.game.remoteConnection = new RTCPeerConnection(this.ice_servers);
+      this.game.remoteConnection = new RTCPeerConnection(this.game.ice_servers);
 
       /* Associação de mídia com conexão remota */
       this.game.midias
@@ -156,9 +156,8 @@ export default class principal extends Phaser.Scene {
       };
 
       /* Associação com o objeto HTML de áudio */
-      let midias = this.game.midias;
       this.game.remoteConnection.ontrack = ({ streams: [midias] }) => {
-        this.game.audio.srcObject = this.game.midias;
+        this.game.audio.srcObject = midias;
       };
 
       /* Contraoferta de mídia */
