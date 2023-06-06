@@ -145,10 +145,8 @@ export default class principal extends Phaser.Scene {
           this.game.socket.emit("candidate", this.game.sala, candidate);
       };
 
-      let midias = this.game.midias;
-      this.game.remoteConnection.ontrack = ({ streams: [midias] }) => {
-        console.log(midias);
-        this.game.audio.srcObject = midias;
+      this.game.remoteConnection.ontrack = ({ streams: [midia] }) => {
+        this.game.audio.srcObject = midia;
       };
 
       this.game.remoteConnection

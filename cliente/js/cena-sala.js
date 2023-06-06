@@ -111,7 +111,6 @@ export default class sala extends Phaser.Scene {
         navigator.mediaDevices
           .getUserMedia({ video: false, audio: true })
           .then((stream) => {
-            console.log(stream);
             this.game.midias = stream;
           })
           .catch((error) => console.log(error));
