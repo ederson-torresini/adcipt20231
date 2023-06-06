@@ -60,7 +60,7 @@ export default class principal extends Phaser.Scene {
   create() {
     this.trilha = this.sound.add("techno-trilha");
     this.trilha.loop = true;
-    this.trilha.play();
+    //this.trilha.play();
 
     this.mapa_principal_terreo = this.make.tilemap({
       key: "mapa-principal-terreo",
