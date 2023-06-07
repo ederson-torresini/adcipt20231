@@ -5,6 +5,42 @@ export default class feira extends Phaser.Scene {
     this.escolha = undefined;
     this.jogos = [
       {
+        indice: "god-between-us",
+        url: "https://ifsc.digital/God-Between-Us/",
+        logo: {
+          nome: "logo-god-between-us",
+          arquivo: "./assets/logos/god-between-us.png",
+        },
+        qrcode: {
+          nome: "qrcode-god-between-us",
+          arquivo: "./assets/qrcodes/god-between-us.png",
+        },
+      },
+      {
+        indice: "cattus",
+        url: "https://ifsc.digital/Cattus/",
+        logo: {
+          nome: "logo-cattus",
+          arquivo: "./assets/logos/cattus.png",
+        },
+        qrcode: {
+          nome: "qrcode-cattus",
+          arquivo: "./assets/qrcodes/cattus.png",
+        },
+      },
+      {
+        indice: "em-busca-das-flores-magicas",
+        url: "https://ifsc.digital/Em-busca-das-flores-magicas/",
+        logo: {
+          nome: "logo-em-busca-das-flores-magicas",
+          arquivo: "./assets/logos/em-busca-das-flores-magicas.png",
+        },
+        qrcode: {
+          nome: "qrcode-em-busca-das-flores-magicas",
+          arquivo: "./assets/qrcodes/em-busca-das-flores-magicas.png",
+        },
+      },
+      {
         indice: "maze-of-the-past",
         url: "https://ifsc.digital/Maze-of-the-past-/",
         logo: {
@@ -82,16 +118,13 @@ export default class feira extends Phaser.Scene {
     this.trilha.loop = true;
     this.trilha.play();
 
-    this.jogos.forEach((jogo) => {
+    this.jogos.sort(() => Math.random() - 0.5).forEach((jogo, indice) => {
       jogo.logo.objeto = this.physics.add
         .sprite(
           this.game.config.width / 2,
-          this.game.config.height / 2,
+          this.game.config.height / this.jogos.length * indice + 64,
           jogo.logo.nome
         )
-        .setVelocityX((Math.random() - 0.5) * Math.random() * this.speed)
-        .setVelocityY((Math.random() - 0.5) * Math.random() * this.speed)
-        .setCollideWorldBounds(true, 1, 1, true)
         .setInteractive()
         .on("pointerdown", () => {
           if (!this.escolha) {
