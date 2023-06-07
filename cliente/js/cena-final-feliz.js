@@ -25,5 +25,5 @@ export default class final_feliz extends Phaser.Scene {
     });
   }
 
-  upload() {}
+  update() { }
 }

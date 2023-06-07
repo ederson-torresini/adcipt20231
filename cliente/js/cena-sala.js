@@ -118,5 +118,5 @@ export default class sala extends Phaser.Scene {
     });
   }
 
-  upload() {}
+  update() { }
 }

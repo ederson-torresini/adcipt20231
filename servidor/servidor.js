@@ -52,7 +52,7 @@ io.on("connection", (socket) => {
     socket.broadcast.to(sala).emit("answer", description);
   });
 
-  socket.on("disconnect", () => {});
+  socket.on("disconnect", () => { });
 });
 
 app.use(express.static("../cliente/"));
