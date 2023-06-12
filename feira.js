@@ -6,7 +6,7 @@ export default class feira extends Phaser.Scene {
     this.jogos = [
       {
         indice: "god-between-us",
-        url: "https://ifsc.digital/God-Between-Us/",
+        url: "God-Between-Us",
         logo: {
           nome: "logo-god-between-us",
           arquivo: "./assets/logos/god-between-us.png",
@@ -18,7 +18,7 @@ export default class feira extends Phaser.Scene {
       },
       {
         indice: "cattus",
-        url: "https://ifsc.digital/Cattus/",
+        url: "Cattus",
         logo: {
           nome: "logo-cattus",
           arquivo: "./assets/logos/cattus.png",
@@ -30,7 +30,7 @@ export default class feira extends Phaser.Scene {
       },
       {
         indice: "em-busca-das-flores-magicas",
-        url: "https://ifsc.digital/Em-busca-das-flores-magicas/",
+        url: "Em-busca-das-flores-magicas",
         logo: {
           nome: "logo-em-busca-das-flores-magicas",
           arquivo: "./assets/logos/em-busca-das-flores-magicas.png",
@@ -42,7 +42,7 @@ export default class feira extends Phaser.Scene {
       },
       {
         indice: "maze-of-the-past",
-        url: "https://ifsc.digital/Maze-of-the-past-/",
+        url: "Maze-of-the-past-",
         logo: {
           nome: "logo-maze-of-the-past",
           arquivo: "./assets/logos/maze-of-the-past.png",
@@ -54,7 +54,7 @@ export default class feira extends Phaser.Scene {
       },
       {
         indice: "triver",
-        url: "https://ifsc.digital/Trivert/",
+        url: "Trivert",
         logo: {
           nome: "logo-trivert",
           arquivo: "./assets/logos/trivert.png",
@@ -66,7 +66,7 @@ export default class feira extends Phaser.Scene {
       },
       {
         indice: "escape-room",
-        url: "https://ifsc.digital/EscapeRoom/",
+        url: "EscapeRoom",
         logo: {
           nome: "logo-escape-room",
           arquivo: "./assets/logos/escape-room.png",
@@ -78,7 +78,7 @@ export default class feira extends Phaser.Scene {
       },
       {
         indice: "joao-maria",
-        url: "https://ifsc.digital/Joao-Maria-The-order-of-warder/",
+        url: "Joao-Maria-The-order-of-warder",
         logo: {
           nome: "logo-joao-maria",
           arquivo: "./assets/logos/joao-maria.png",
@@ -132,7 +132,7 @@ export default class feira extends Phaser.Scene {
             this.cameras.main.once("camerafadeoutcomplete", (camera) => {
               camera.fadeIn(this.fadingTime);
 
-              this.escolha = jogo.url;
+              this.escolha = window.location.href + jogo.url + "/";
               this.fechar.setVisible(true);
               this.jogar.setVisible(true);
 
