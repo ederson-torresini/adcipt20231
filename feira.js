@@ -200,7 +200,7 @@ export default class feira extends Phaser.Scene {
       .setVisible(false)
       .anims.play("jogar-animado", true)
       .on("pointerdown", () => {
-        window.open(this.escolha, "_blank");
+        window.location.assign(this.escolha);
       });
 
     this.anims.create({
