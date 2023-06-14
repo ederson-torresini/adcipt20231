@@ -1,3 +1,5 @@
+import Phaser from 'phaser'
+
 export default class feira extends Phaser.Scene {
   constructor () {
     super('feira')
