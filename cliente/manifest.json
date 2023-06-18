@@ -1,0 +1,33 @@
+{
+  "name": "ADC/IPT 2023.1",
+  "short_name": "ADC/IPT 2023.1",
+  "lang": "pt-BR",
+  "id": "./index.html",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "assets/logo-128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "assets/logo-192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/logo-256.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "assets/logo-384.png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "assets/logo-512.png",
+      "sizes": "512x512"
+    }
+  ]
+}
