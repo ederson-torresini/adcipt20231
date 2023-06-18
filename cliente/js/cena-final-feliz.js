@@ -24,6 +24,4 @@ export default class finalFeliz extends Phaser.Scene {
       fill: '#000000'
     })
   }
-
-  update () { }
 }

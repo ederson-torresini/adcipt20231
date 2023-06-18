@@ -366,17 +366,15 @@ export default class principal extends Phaser.Scene {
   }
 
   update () {
-    let frame
     try {
-      frame = this.jogador_1.anims.getFrameName()
-    } catch (e) {
-      frame = 0
+      this.game.socket.emit('estado-publicar', this.game.sala, {
+        frame: this.jogador_1.anims.getFrameName(),
+        x: this.jogador_1.body.x + 32,
+        y: this.jogador_1.body.y + 32
+      })
+    } catch (error) {
+      console.log(error)
     }
-    this.game.socket.emit('estado-publicar', this.game.sala, {
-      frame,
-      x: this.jogador_1.body.x + 32,
-      y: this.jogador_1.body.y + 32
-    })
   }
 
   colidir_mapa () {

@@ -18,8 +18,6 @@ export default class abertura extends Phaser.Scene {
     })
   }
 
-  update () { }
-
   countdown () {
     this.timer -= 1
     if (this.timer <= 0) {

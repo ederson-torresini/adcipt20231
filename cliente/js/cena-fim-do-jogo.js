@@ -24,6 +24,4 @@ export default class fimDoJogo extends Phaser.Scene {
       fill: '#000000'
     })
   }
-
-  update () { }
 }
