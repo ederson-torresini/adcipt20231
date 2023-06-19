@@ -1,4 +1,3 @@
-import Phaser from 'phaser'
 import config from './config.js'
 import feira from './feira.js'
 

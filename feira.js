@@ -1,11 +1,21 @@
-import Phaser from 'phaser'
-
 export default class feira extends Phaser.Scene {
   constructor () {
     super('feira')
 
     this.escolha = undefined
     this.jogos = [
+      {
+        indice: 'folclore',
+        url: 'Folclore',
+        logo: {
+          nome: 'logo-folclore',
+          arquivo: './assets/logos/folclore.png'
+        },
+        qrcode: {
+          nome: 'qrcode-folclore',
+          arquivo: './assets/qrcodes/folclore.png'
+        }
+      },
       {
         indice: 'god-between-us',
         url: 'God-Between-Us',
@@ -121,12 +131,18 @@ export default class feira extends Phaser.Scene {
     this.trilha.play()
 
     this.jogos.sort(() => Math.random() - 0.5).forEach((jogo, indice) => {
+      let x
+      let y
+      if (indice < this.jogos.length * 0.5) {
+        x = this.game.config.width * 0.25
+        y = this.game.config.height / (this.jogos.length * 0.5) * indice + 128
+      } else {
+        x = this.game.config.width * 0.75
+        y = this.game.config.height / (this.jogos.length * 0.5) * (indice - this.jogos.length * 0.5) + 128
+      }
+
       jogo.logo.objeto = this.physics.add
-        .sprite(
-          this.game.config.width / 2,
-          this.game.config.height / this.jogos.length * indice + 64,
-          jogo.logo.nome
-        )
+        .sprite(x, y, jogo.logo.nome)
         .setInteractive()
         .on('pointerdown', () => {
           if (!this.escolha) {
