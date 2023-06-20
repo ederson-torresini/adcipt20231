@@ -5,6 +5,18 @@ export default class feira extends Phaser.Scene {
     this.escolha = undefined
     this.jogos = [
       {
+        indice: 'notte-etterna-z',
+        url: 'Notte-Etterna-Z',
+        logo: {
+          nome: 'logo-notte-etterna-z',
+          arquivo: './assets/logos/notte-etterna-z.png'
+        },
+        qrcode: {
+          nome: 'qrcode-notte-etterna-z',
+          arquivo: './assets/qrcodes/notte-etterna-z.png'
+        }
+      },
+      {
         indice: 'folclore',
         url: 'Folclore',
         logo: {
@@ -135,10 +147,10 @@ export default class feira extends Phaser.Scene {
       let y
       if (indice < this.jogos.length * 0.5) {
         x = this.game.config.width * 0.25
-        y = this.game.config.height / (this.jogos.length * 0.5) * indice + 128
+        y = this.game.config.height / Math.round(this.jogos.length * 0.5) * indice + 96
       } else {
         x = this.game.config.width * 0.75
-        y = this.game.config.height / (this.jogos.length * 0.5) * (indice - this.jogos.length * 0.5) + 128
+        y = this.game.config.height / (this.jogos.length * 0.5) * (indice - this.jogos.length * 0.5) + 64
       }
 
       jogo.logo.objeto = this.physics.add
