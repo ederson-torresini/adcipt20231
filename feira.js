@@ -5,15 +5,15 @@ export default class feira extends Phaser.Scene {
     this.escolha = undefined
     this.jogos = [
       {
-        indice: 'notte-etterna-z',
-        url: 'Notte-Etterna-Z',
+        indice: 'notte-eterna-z',
+        url: 'Notte-Eterna-Z',
         logo: {
-          nome: 'logo-notte-etterna-z',
-          arquivo: './assets/logos/notte-etterna-z.png'
+          nome: 'logo-notte-eterna-z',
+          arquivo: './assets/logos/notte-eterna-z.png'
         },
         qrcode: {
-          nome: 'qrcode-notte-etterna-z',
-          arquivo: './assets/qrcodes/notte-etterna-z.png'
+          nome: 'qrcode-notte-eterna-z',
+          arquivo: './assets/qrcodes/notte-eterna-z.png'
         }
       },
       {
