@@ -9,8 +9,38 @@ class Game extends Phaser.Game {
   constructor () {
     super(config)
 
-    /* Sinalização, escolha de caminho e mídia */
-    this.socket = io()
+    /* URL e lista de STUN/TURN/ICE por provedor */
+    let iceServers
+    if (window.location.host === 'ifsc.digital') {
+      /* Sinalização, escolha de caminho e mídia */
+      this.socket = io.connect({ path: '/smu20231/socket.io/' })
+
+      iceServers = [
+        {
+          urls: 'stun:ifsc.digital'
+        },
+        {
+          urls: 'turns:ifsc.digital',
+          username: 'adcipt',
+          credential: 'adcipt20231'
+        },
+        {
+          urls: 'stun:stun.l.google.com:19302'
+        }
+      ]
+    } else {
+      /* Sinalização, escolha de caminho e mídia */
+      this.socket = io()
+
+      iceServers = [
+        {
+          urls: 'stun:stun.l.google.com:19302'
+        }
+      ]
+    }
+    this.ice_servers = { iceServers }
+    this.audio = document.querySelector('audio')
+    this.midias = undefined
 
     this.socket.on('connect', () => {
       this.socket.emit('registro', this.socket.id)
@@ -23,16 +53,6 @@ class Game extends Phaser.Game {
     this.socket.on('registro-nok', () => {
       this.registro = false
     })
-
-    this.ice_servers = {
-      iceServers: [
-        {
-          urls: 'stun:stun.l.google.com:19302'
-        }
-      ]
-    }
-    this.audio = document.querySelector('audio')
-    this.midias = undefined
 
     /* Cenas */
     this.scene.add('registro', registro)
