@@ -28,16 +28,16 @@ io.on('connection', (socket) => {
     }
   })
 
-  socket.on('offer', (from, to, description) => {
-    io.to(to).emit('offer', from, to, description)
+  socket.on('offer', ({ from, to, description }) => {
+    io.to(to).emit('offer', { from, to, description })
   })
 
-  socket.on('answer', (sala, description) => {
-    socket.broadcast.to(sala).emit('answer', description)
+  socket.on('answer', ({ from, to, description }) => {
+    socket.to(to).emit('answer', { from, to, description })
   })
 
-  socket.on('candidate', (sala, signal) => {
-    socket.broadcast.to(sala).emit('candidate', signal)
+  socket.on('candidate', ({ from, to, candidate }) => {
+    socket.to(to).emit('candidate', { from, to, candidate })
   })
 
   socket.on('disconnecting', () => {
@@ -51,10 +51,6 @@ io.on('connection', (socket) => {
           )
         )
       })
-  })
-
-  socket.on('estadoDoJogador', (sala, estado) => {
-    socket.broadcast.to(sala).emit('desenharOutroJogador', estado)
   })
 })
 
